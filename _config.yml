@@ -11,9 +11,6 @@ github_username:    joaonunovalente
 instagram_username: joaonunovalente 
 linkedin_username:  joaonunovalente
 
-# Add your google-analytics ID here to activate google analytics
-# google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
-
 # Build settings
 markdown:           kramdown
 paginate:           5
