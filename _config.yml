@@ -1,0 +1,24 @@
+title:              PhD Website
+email:              jnvalente@ua.pt
+description:        PhD Website descrition
+author:             João Nuno Valente
+baseurl:            ""
+url:                "https://phd.joaonunovalente.com"
+
+# Social Profiles
+twitter_username:   joaonunovalente
+github_username:    joaonunovalente
+instagram_username: joaonunovalente 
+linkedin_username:  joaonunovalente
+
+# Add your google-analytics ID here to activate google analytics
+# google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
