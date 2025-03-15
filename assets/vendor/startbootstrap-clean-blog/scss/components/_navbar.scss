@@ -34,8 +34,8 @@
     }
 
     .navbar-nav {
-        >li.nav-item {
-            >a {
+        > li.nav-item {
+            > a {
                 font-size: 12px;
                 font-weight: 800;
                 letter-spacing: 1px;
@@ -44,6 +44,7 @@
         }
     }
 
+    // Media query for smaller screens
     @media only screen and (max-width: 991px) {
         .navbar-brand {
             .logo-white {
@@ -56,6 +57,7 @@
         }
     }
 
+    // Media query for larger screens
     @media only screen and (min-width: 992px) {
         border-bottom: 1px solid transparent;
         background: transparent;
@@ -76,8 +78,8 @@
         }
 
         .navbar-nav {
-            >li.nav-item {
-                >a {
+            > li.nav-item {
+                > a {
                     padding: 10px 20px;
                     color: $white;
 
@@ -88,13 +90,11 @@
                 }
             }
         }
-    }
 
-    @media only screen and (min-width: 992px) {
+        // Transition and hardware acceleration properties
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         transition: background-color 0.2s;
-        /* Force Hardware Acceleration in WebKit */
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -103,8 +103,8 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
 
+        // Fixed header styles
         &.is-fixed {
-            /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
             top: -67px;
             -webkit-transition: -webkit-transform 0.2s;
@@ -123,8 +123,8 @@
             }
 
             .navbar-nav {
-                >li.nav-item {
-                    >a {
+                > li.nav-item {
+                    > a {
                         color: $gray-900;
 
                         &:focus,
