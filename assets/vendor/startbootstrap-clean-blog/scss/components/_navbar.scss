@@ -5,9 +5,24 @@
     background-color: white;
     font-family: $headings-font-family;
 
+    .navbar-brand img {
+        display: block; // Ensure images are block elements
+        max-width: 100%; // Prevent overflow
+        height: auto; // Maintain aspect ratio
+    }
+
     .navbar-brand {
         font-weight: 800;
         color: $gray-800;
+
+        // Logo styles
+        .logo-white {
+            display: block; // Show white logo by default
+        }
+
+        .logo-black {
+            display: none; // Hide black logo by default
+        }
     }
 
     .navbar-toggler {
@@ -29,6 +44,18 @@
         }
     }
 
+    @media only screen and (max-width: 991px) {
+        .navbar-brand {
+            .logo-white {
+                display: none; // Hide white logo on smaller screens
+            }
+
+            .logo-black {
+                display: block; // Show black logo on smaller screens
+            }
+        }
+    }
+
     @media only screen and (min-width: 992px) {
         border-bottom: 1px solid transparent;
         background: transparent;
@@ -40,6 +67,11 @@
             &:focus,
             &:hover {
                 color: fade-out($white, .2);
+            }
+
+            // Ensure black logo is hidden on larger screens
+            .logo-black {
+                display: none; // Hide black logo on larger screens
             }
         }
 
