@@ -19,8 +19,8 @@
     }
 
     .navbar-nav {
-        >li.nav-item {
-            >a {
+        > li.nav-item {
+            > a {
                 font-size: 12px;
                 font-weight: 800;
                 letter-spacing: 1px;
@@ -29,7 +29,24 @@
         }
     }
 
+    // Logo visibility based on screen size
+    .logo-white {
+        display: none; // Hide white logo by default
+    }
+
+    .logo-black {
+        display: block; // Show black logo by default
+    }
+
     @media only screen and (min-width: 992px) {
+        .logo-white {
+            display: block; // Show white logo on larger screens
+        }
+
+        .logo-black {
+            display: none; // Hide black logo on larger screens
+        }
+
         border-bottom: 1px solid transparent;
         background: transparent;
 
@@ -44,8 +61,8 @@
         }
 
         .navbar-nav {
-            >li.nav-item {
-                >a {
+            > li.nav-item {
+                > a {
                     padding: 10px 20px;
                     color: $white;
 
@@ -56,13 +73,12 @@
                 }
             }
         }
-    }
 
-    @media only screen and (min-width: 992px) {
+        // Transition and fixed styles
         -webkit-transition: background-color 0.2s;
         -moz-transition: background-color 0.2s;
         transition: background-color 0.2s;
-        /* Force Hardware Acceleration in WebKit */
+        // Force Hardware Acceleration in WebKit
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -72,7 +88,6 @@
         backface-visibility: hidden;
 
         &.is-fixed {
-            /* when the user scrolls down, we hide the header right above the viewport */
             position: fixed;
             top: -67px;
             -webkit-transition: -webkit-transform 0.2s;
@@ -91,8 +106,8 @@
             }
 
             .navbar-nav {
-                >li.nav-item {
-                    >a {
+                > li.nav-item {
+                    > a {
                         color: $gray-900;
 
                         &:focus,
@@ -105,7 +120,6 @@
         }
 
         &.is-visible {
-            /* if the user changes the scrolling direction, we show the header */
             -webkit-transform: translate3d(0, 100%, 0);
             -moz-transform: translate3d(0, 100%, 0);
             -ms-transform: translate3d(0, 100%, 0);
