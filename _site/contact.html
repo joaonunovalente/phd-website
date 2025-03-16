@@ -210,7 +210,7 @@
           // get values from FORM
           var name = $("input#name").val();
           var email = $("input#email").val();
-          var phone = $("input#phone").val();
+          // var phone = $("input#phone").val();
           var message = $("textarea#message").val();
           var firstName = name; // For Success/Failure Message
           // Check for white space in name for Success/Fail message
@@ -220,11 +220,11 @@
           $this = $("#sendMessageButton");
           $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
           $.ajax({
-            url: "//formspree.io/email@domain.com",
+            url: "https://formsubmit.co/ajax/40cac04d60d2825cbe93fa35d87026b9",
             type: "POST",
             data: {
               name: name,
-              phone: phone,
+              // phone: phone,
               email: email,
               message: message
             },
