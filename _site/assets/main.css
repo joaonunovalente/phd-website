@@ -9299,6 +9299,9 @@ img::-moz-selection {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+#mainNav .navbar-nav .no-uppercase {
+  text-transform: none !important;
+}
 #mainNav .logo-white {
   display: none;
 }

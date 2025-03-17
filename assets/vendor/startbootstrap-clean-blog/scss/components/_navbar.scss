@@ -28,6 +28,11 @@
             }
         }
     }
+    
+    // Override for the PhD link
+    .navbar-nav .no-uppercase {
+        text-transform: none !important; // Prevents text from being transformed to uppercase 
+    }
 
     // Logo visibility based on screen size
     .logo-white {
