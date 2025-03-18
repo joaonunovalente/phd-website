@@ -122,6 +122,14 @@
                     }
                 }
             }
+            
+            .logo-white {
+                display: none; // Hide white logo by default
+            }
+        
+            .logo-black {
+                display: block; // Show black logo by default
+            }
         }
 
         &.is-visible {
