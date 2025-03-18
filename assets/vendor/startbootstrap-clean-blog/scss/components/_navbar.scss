@@ -94,7 +94,7 @@
 
         &.is-fixed {
             position: fixed;
-            top: -67px;
+            top: -74px;
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
@@ -122,7 +122,7 @@
                     }
                 }
             }
-            
+
             .logo-white {
                 display: none; // Hide white logo by default
             }
