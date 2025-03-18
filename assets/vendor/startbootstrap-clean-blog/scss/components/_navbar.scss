@@ -28,6 +28,11 @@
             }
         }
     }
+    
+    // Override for the PhD link
+    .navbar-nav .no-uppercase {
+        text-transform: none !important; // Prevents text from being transformed to uppercase 
+    }
 
     // Logo visibility based on screen size
     .logo-white {
@@ -89,7 +94,7 @@
 
         &.is-fixed {
             position: fixed;
-            top: -67px;
+            top: -74px;
             -webkit-transition: -webkit-transform 0.2s;
             -moz-transition: -moz-transform 0.2s;
             transition: transform 0.2s;
@@ -116,6 +121,14 @@
                         }
                     }
                 }
+            }
+
+            .logo-white {
+                display: none; // Hide white logo by default
+            }
+        
+            .logo-black {
+                display: block; // Show black logo by default
             }
         }
 
