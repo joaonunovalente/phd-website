@@ -14,21 +14,36 @@
         <li class="nav-item">
           <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ "/about/#about-me" | relative_url }}">About me</a>
+            <a class="dropdown-item" href="{{ "/about/#host-institution" | relative_url }}">Host Institution</a>
+            <a class="dropdown-item" href="{{ "/about/#usefull-links" | relative_url }}">Usefull Links</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle no-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            PhD
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ "/phd/#title" | relative_url }}">Title</a>
+            <a class="dropdown-item" href="{{ "/phd/#supervisor-team" | relative_url }}">Supervisor Team</a>
+            <a class="dropdown-item" href="{{ "/phd/#context" | relative_url }}">Context</a>
+            <a class="dropdown-item" href="{{ "/phd/#literature-review | relative_url }}">Literature Review</a>
+            <a class="dropdown-item" href="{{ "/phd/#research-questions" | relative_url }}">Research Questions</a>
+            <a class="dropdown-item" href="{{ "/phd/#methodology" | relative_url }}">Methodology</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{"/posts" | relative_url }}">Posts</a>
         </li>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="{{"/publications" | relative_url }}">Publications</a>
-        </li>         -->
-        <li class="nav-item">
-          <a class="nav-link no-uppercase" href="{{"/phd" | relative_url }}">PhD</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/institution" | relative_url }}">Institution</a>
-        </li>
+        </li>        
+
         <li class="nav-item">
           <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
         </li>
