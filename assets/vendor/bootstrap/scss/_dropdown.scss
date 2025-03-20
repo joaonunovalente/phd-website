@@ -28,11 +28,16 @@
   color: $dropdown-color;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
-  background-color: $dropdown-bg;
-  background-clip: padding-box;
-  border: $dropdown-border-width solid $dropdown-border-color;
-  @include border-radius($dropdown-border-radius);
-  @include box-shadow($dropdown-box-shadow);
+
+}
+@media only screen and (min-width: 992px) {
+  .dropdown-menu {
+    background-color: $dropdown-bg;
+    background-clip: padding-box;
+    border: $dropdown-border-width solid $dropdown-border-color;
+    @include border-radius($dropdown-border-radius);
+    @include box-shadow($dropdown-box-shadow);
+  }
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -125,7 +130,7 @@
   width: 100%; // For `<button>`s
   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
   clear: both;
-  font-weight: 600;
+  font-weight: $font-weight-normal;
   color: $gray-800;
   text-align: inherit; // For `<button>`s
   text-decoration: if($link-decoration == none, null, none);
