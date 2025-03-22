@@ -15,13 +15,13 @@
           <a class="nav-link" href="{{"/" | relative_url }}">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{ "/about" | relative_url }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href=this.href;">
+          <a class="nav-link dropdown-toggle" href="{{ "/about/" | relative_url }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href=this.href;">
             About
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="{{ "/about/#about-me" | relative_url }}">About me</a>
             <a class="dropdown-item" href="{{ "/about/#host-institution" | relative_url }}">Host Institution</a>
-            <a class="dropdown-item" href="{{ "/about/#usefull-links" | relative_url }}">Useful Links</a>
+            <a class="dropdown-item" href="{{ "/about/#useful-links" | relative_url }}">Useful Links</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -32,7 +32,7 @@
             <a class="dropdown-item" href="{{ "/phd/#title" | relative_url }}">Title</a>
             <a class="dropdown-item" href="{{ "/phd/#supervisor-team" | relative_url }}">Supervisor Team</a>
             <a class="dropdown-item" href="{{ "/phd/#context" | relative_url }}">Context</a>
-            <a class="dropdown-item" href="{{ "/phd/#literature-review | relative_url }}">Literature Review</a>
+            <a class="dropdown-item" href="{{ "/phd/#literature-review" | relative_url }}">Literature Review</a>
             <a class="dropdown-item" href="{{ "/phd/#research-questions" | relative_url }}">Research Questions</a>
             <a class="dropdown-item" href="{{ "/phd/#methodology" | relative_url }}">Methodology</a>
           </div>
@@ -40,14 +40,26 @@
         <li class="nav-item">
           <a class="nav-link" href="{{"/posts" | relative_url }}">Posts</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{"/publications" | relative_url }}">Publications</a>
-        </li>        
-
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="{{ "/research-dissemination" | relative_url }}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href=this.href;">
+            Research Dissemination
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ "/research-dissemination/#publications" | relative_url }}">Publications</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#talks" | relative_url }}">Talks & Presentations</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#posters" | relative_url }}">Posters</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#workshops" | relative_url }}">Workshops & Panels</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#media" | relative_url }}">Media & Interviews</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#engagement" | relative_url }}">Public Engagement</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#reports" | relative_url }}">Reports & White Papers</a>
+            <a class="dropdown-item" href="{{ "/research-dissemination/#software" | relative_url }}">Software & Datasets</a>
+          </div>
+        </li>
+        
+               
         <li class="nav-item">
           <a class="nav-link" href="{{"/contact" | relative_url }}">Contact</a>
         </li>
-        
       </ul>
     </div>
   </div>
