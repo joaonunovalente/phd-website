@@ -93,9 +93,14 @@ background: '/img/bg-about.jpg'
 <p style="margin-bottom: -2px;">
   The accelerometers captured mechanical vibrations, which were processed using Fast Fourier Transform (FFT) to extract frequency-domain information for Modal Analysis.
 </p>
-<div class="row align-items-center ">
-  <!-- Text Column -->
-  <div class="col-md-7 align-items-center ">
+
+<div style="margin-bottom: -30px;" class="row align-items-center test">
+  <!-- Image Column (First on small screens) -->
+  <div class="col-md-5 text-center d-flex align-items-center order-md-2">
+    <img src="/img/about/setup.jpg" alt="About Me Image" class="img-fluid rounded">
+  </div>
+  <!-- Text Column (Second on small screens) -->
+  <div class="col-md-7 align-items-center order-md-1 order-2">
     <p>
       The ESP32 microcontrollers handled both data acquisition and signal processing, making them efficient for vibration analysis.  
     </p>
@@ -103,12 +108,9 @@ background: '/img/bg-about.jpg'
       To ensure seamless wireless communication, I implemented an ad hoc mesh network, allowing real-time data transmission between sensor nodes without a central hub.
     </p>
   </div>
-  <!-- Image Column -->
-  <div class="col-md-5 text-center d-flex align-items-center">
-    <img src="/img/about/setup.jpg" alt="About Me Image" class="img-fluid rounded">
-  </div>
 </div>
 
+<p>
   The master thesis can be found <a target="_blank" rel="noopener noreferrer" href="https://ria.ua.pt/handle/10773/41622">here</a>.
 </p>
 
