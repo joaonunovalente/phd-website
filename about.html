@@ -26,11 +26,11 @@ background: '/img/bg-about.jpg'
     <img src="/img/about/profile-about.jpg" alt="About Me Image" class="img-fluid rounded">
   </div>
 </div>
-<p style="margin-top: 0px;">
+<!-- <p style="margin-top: 0px;">
   I also spent a year in Udine, Italy, doing ERASMUS. 
   I was involved in an organization called <a target="_blank" rel="noopener noreferrer" href="https://bestaveiro.web.ua.pt/">BEST Aveiro</a>, where I had the opportunity to participate in several events and coordinate one of its local engineering competition, EBEC.
-</p>
-<p>
+</p> -->
+<p style="margin-top: 0px;">
   Besides that, I used to play chess and was part of the university team. 
   Nowadays, I am retired, but I can still play a game or two on <a target="_blank" rel="noopener noreferrer" href="https://lichess.org/@/joaovalente">Lichess</a> or <a target="_blank" rel="noopener noreferrer" href="https://chess.com/member/joaovalente">Chess.com</a>.
 </p>
@@ -40,111 +40,119 @@ background: '/img/bg-about.jpg'
 ---------- Host Intitution Section -----------
 --------------------------------------------->
 
+<!-- Host Institution Section -->
 <h1 id="host-institution">Host Institution</h1>
-<br>
-<!--------------------------------------------
------------ University Subsection ------------
---------------------------------------------->
-<h3 id="university-of-aveiro">University of Aveiro</h2>
-<!-- Row with text and image -->
-<div class="row align-items-center">
-  <!-- Text Column -->
-  <div class="col-md-6 align-items-center ">
-    <p>
-      The <a target="_blank" rel="noopener noreferrer" href="https://www.ua.pt/">University of Aveiro</a>, located in the city of Aveiro, Portugal, is a public university known for its strong focus on technology and science.
-    </p>
-    <p>
-      Established in 1973, it offers a wide range of programs in fields such as engineering and sciences.
-    </p>
-  </div>
-  <!-- Image Column -->
-  <div class="col-md-6 text-center d-flex align-items-center">
-    <img src="/img/about/university-of-aveiro.jpg" alt="About Me Image" class="img-fluid rounded">
-  </div>
-</div>
-<p style="margin-top: 0px;">
-  The university is home to several research centers - such as <a target="_blank" rel="noopener noreferrer" href="https://www.ua.pt/en/tema/"> Centre for Mechanical Technology and Automation (TEMA)</a> -
-  and laboratories that drive innovation in areas like mechanical engineering, telecommunications, and robotics.
-</p>
-<br>
-<!--------------------------------------------
------------ Departmnent Subsection -----------
---------------------------------------------->
-<h3 id="department"">Department of Mechanical Engineering</h3>
-<div class="row align-items-center">
-  <!-- Image Column (First on large screens, second on small screens) -->
-  <div class="col-md-6 order-2 order-md-1 text-center d-flex align-items-center">
-      <img src="/img/about/department-of-mechanical-engineering.jpg" alt="About Me Image" class="img-fluid rounded">
-  </div>
-  <!-- Text Column (Second on large screens, first on small screens) -->
-  <div class="col-md-6 order-1 order-md-2 align-items-center">
-      <p>
-          The Department of Mechanical Engineering (DEM) at the University of Aveiro is a hub for innovation, research, and advanced education in mechanical engineering. 
-      </p>
-      <p>
-          The department offers a Doctoral Program in Mechanical Engineering.
-      </p>
-  </div>
-</div>
-
-<p style="margin-top: 0px;">
-  It was here that I earned my integrated master’s degree in Mechanical Engineering, where I focused my dissertation on mechanical vibrations by developing a low-cost wireless system using MEMS accelerometers and ESP32 microcontrollers.
-</p>
-<h5>Master Thesis</h5>
-<p style="margin-bottom: -2px;">
-  The accelerometers captured mechanical vibrations, which were processed using Fast Fourier Transform (FFT) to extract frequency-domain information for Modal Analysis.
-</p>
-
-<div style="margin-bottom: -30px;" class="row align-items-center test">
-  <!-- Image Column (First on small screens) -->
-  <div class="col-md-5 text-center d-flex align-items-center order-md-2">
-    <img src="/img/about/setup.jpg" alt="About Me Image" class="img-fluid rounded">
-  </div>
-  <!-- Text Column (Second on small screens) -->
-  <div class="col-md-7 align-items-center order-md-1 order-2">
-    <p>
-      The ESP32 microcontrollers handled both data acquisition and signal processing, making them efficient for vibration analysis.  
-    </p>
-    <p>
-      To ensure seamless wireless communication, I implemented an ad hoc mesh network, allowing real-time data transmission between sensor nodes without a central hub.
-    </p>
-  </div>
-</div>
 <p>
-  The master thesis can be found <a target="_blank" rel="noopener noreferrer" href="https://ria.ua.pt/handle/10773/41622">here</a>.
+  My academic journey has been deeply rooted in the Department of Mechanical Engineering at the University of Aveiro — from undergraduate studies to doctoral school.
 </p>
-<!--------------------------------------------
------------ Laboratory Subsection -----------
---------------------------------------------->
-<br>
-<h3 id="laboratory">Laboratory of Automation and Robotics</h2>
+<!-- Tabs Navigation -->
+<ul class="nav nav-tabs justify-content-center" id="institutionTabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="university-tab" data-toggle="tab" href="#university" role="tab" aria-controls="university" aria-selected="true">
+      <span class="d-inline d-md-none"><i class="fas fa-university" title="University"></i></span>
+      <span class="d-none d-md-inline">University</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="department-tab" data-toggle="tab" href="#department" role="tab" aria-controls="department" aria-selected="false">
+      <span class="d-inline d-md-none"><i class="fas fa-cogs" title="Department"></i></span>
+      <span class="d-none d-md-inline">Department</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="lab-tab" data-toggle="tab" href="#lab" role="tab" aria-controls="lab" aria-selected="false">
+      <span class="d-inline d-md-none"><i class="fas fa-robot" title="Laboratory"></i></span>
+      <span class="d-none d-md-inline">Laboratory</span>
+    </a>
+  </li>
+</ul>
+
+<!-- Tabs Content -->
+<div class="tab-content mt-5" id="institutionTabsContent">
+  <!-- University Tab -->
+  <div class="tab-pane fade show active" id="university" role="tabpanel" aria-labelledby="university-tab">
+    <h3>University of Aveiro</h3>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          I’ve been at the <a href="https://www.ua.pt/" target="_blank" rel="noopener noreferrer">University of Aveiro</a> for quite a few years now — and honestly, I still love the campus vibe. 
+        </p>
+        <p>
+          There’s something about the open spaces, the mix of nature and architecture, and the energy of the place that makes it feel alive.
+        </p>
+      </div>
+      <div class="col-md-6 text-center d-flex align-items-center">
+        <img src="/img/about/university-of-aveiro.jpg" alt="University" class="img-fluid rounded">
+      </div>
+    </div>
+    <p style="margin-top: 0px;">
+      UA is also a place that takes research seriously. It’s home to research units like the 
+      <a href="https://www.ua.pt/en/tema/" target="_blank" rel="noopener noreferrer">Centre for Mechanical Technology and Automation (TEMA)</a>, 
+      where innovation in areas like robotics, materials, and automation is constantly happening. 
+    </p>
+  </div>
+
+  <!-- Department Tab -->
+  <div class="tab-pane fade" id="department" role="tabpanel" aria-labelledby="department-tab">
+    <h3>Department of Mechanical Engineering</h3>
+    <div class="row align-items-center">
+      <!-- Text Column (first on all screens) -->
+      <div class="col-md-6 order-1">
+        <p>
+          The Department of Mechanical Engineering (DEM) has pretty much been my academic home base since the begining. 
+        </p>
+        <p>
+          This is where learnt the basics of engineering. Mainly, I focused on mechanical vibrations.
+        </p>
+      </div>
+      
+      <!-- Image Column (after text on all screens) -->
+      <div class="col-md-6 order-2 text-center d-flex align-items-center">
+        <img src="/img/about/department-of-mechanical-engineering.jpg" alt="Department" class="img-fluid rounded">
+      </div>
+    </div>
   
+    <p style="margin-top: 0px;">
+      I completed my integrated master’s degree here, and for my thesis, I explored mechanical vibrations using MEMS accelerometers and micro-controllers, such as ESP32. 
+      
+    </p>
+    <p>
+      You can find my master thesis <a href="https://ria.ua.pt/handle/10773/41622" target="_blank" rel="noopener noreferrer">here</a>.
+    </p>
+  </div>
+  
+  
+
+<!-- Laboratory Tab -->
+<div class="tab-pane fade" id="lab" role="tabpanel" aria-labelledby="lab-tab">
+  <h3>Laboratory of Automation and Robotics</h3>
   <div class="row align-items-center">
-    <!-- Text Column (First on all screens) -->
-    <div class="col-md-6 order-1 order-md-2">
-        <p>
-            The Laboratory for Automation and Robotics (LAR) is part of the Department of Mechanical Engineering at the University of Aveiro.
-        </p>
-        <p>
-            It is in this laboratory that I am currently conducting my research.
-        </p>
+    <!-- Text column (first on all screen sizes) -->
+    <div class="col-md-6 order-1">
+      <p>
+        The Laboratory of Automation and Robotics (LAR) is part of DEM and is where I’m currently doing my PhD research.
+      </p>
+      <p>
+        I'm surrounded by robots, RGBD cameras, and people who are just as obsessed with innovation as I am.
+
+      </p>
     </div>
-    <!-- Image Column (Second on small screens, first on large screens) -->
-    <div class="col-md-6 order-2 order-md-1 text-center d-flex align-items-center">
-        <img src="/img/about/lar.jpeg" alt="About Me Image" class="img-fluid rounded">
+
+    <!-- Image column (second on all screens) -->
+    <div class="col-md-6 order-2 text-center d-flex align-items-center">
+      <img src="/img/about/lar.jpeg" alt="LAR" class="img-fluid rounded">
     </div>
+  </div>
+
+  <p style="margin-top: 0px;">
+    The laboratory is led by <b>Professor <a href="https://www.ua.pt/pt/p/10313561" target="_blank" rel="noopener noreferrer">Vítor Santos</a></b> and it’s also home to the 
+    <a href="https://atlas.web.ua.pt/" target="_blank" rel="noopener noreferrer">ATLAS</a> project.
+    You’ll find gear like the <a href="https://www.universal-robots.com/products/ur10e/" target="_blank" rel="noopener noreferrer">UR10e</a> robotic arm and a fleet of RGBD sensors here, 
+    such as the <a href="https://www.orbbec.com/products/tof-camera/femto-mega/" target="_blank" rel="noopener noreferrer">ORBBEC Femto Mega</a> that I'm currently using.
+  </p>
 </div>
 
 
-
-
-<p style="margin-top: 0px;">
-  LAR has been dedicated to research and development in Robotics and Automation, while also offering support to Master's, PhD, and Post-Doctoral students.
-  The laboratory is led by <b>Professor  <a target="_blank" rel="noopener noreferrer" href="https://www.ua.pt/pt/p/10313561">Vítor Santos</a></b>.
-</p>
-<p>
-  The lab's primary research areas include Autonomous Navigation, Advanced Perception, and Humanoid Robotics. LAR is particularly well-known for its successful <a target="_blank" rel="noopener noreferrer" href="https://atlas.web.ua.pt/">ATLAS</a>  project, which includes the ATLASCAR.
-</p>
 <hr>
 <br>
 <!--------------------------------------------
