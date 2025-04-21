@@ -24,21 +24,23 @@
 
 @media (max-width: 576px) {
   .ref-row {
-    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
   }
-
+  
   .ref-index {
-    width: 100%;
-    text-align: left;
+    font-weight: bold;
     margin-bottom: 0.25rem;
   }
+  
+  .doi-block a {
+    word-break: break-word;
+    display: inline-block;
+    max-width: 100%;
+  }
 }
 
-.doi-block {
-  display: inline;
-  white-space: normal;
-  word-break: break-word;
-}
 
 html {
   scroll-behavior: smooth;
@@ -53,3 +55,4 @@ html {
     white-space: nowrap;
   }
 }
+
