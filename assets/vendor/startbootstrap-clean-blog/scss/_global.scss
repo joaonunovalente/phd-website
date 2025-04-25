@@ -42,11 +42,23 @@ blockquote {
     color: $gray-600;
 }
 
-.section-heading {
+.post-content h1 {
     font-size: 36px;
     font-weight: 700;
     margin-top: 60px;
-}
+  }
+  
+  .post-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+  
+  .post-content h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 40px;
+  }
 
 .caption {
     font-size: 14px;
