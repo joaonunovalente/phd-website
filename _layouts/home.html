@@ -1,37 +1,62 @@
 ---
 layout: default
+title: Home
 ---
 
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
-  <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
+{% else %}
+<header class="masthead">
+{% endif %}
+  <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+          <h1>{{ site.title }}</h1>
+          {% if site.description %}
+          <span class="subheading">{{ site.description }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-        {{ content }}
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
 
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+      <!-- Welcome Section -->
+      <section class="mb-5">
+        <h1 class="mb-3">Welcome!</h2>
+        <p>
+          Hi! I’m <strong>João Nuno Valente</strong>, a PhD student at the University of Aveiro, Portugal. 
+          My work focuses on 3D vibrometry using depth cameras.
+        </p>
+        <p>
+          This website is where I share insights from my research, post updates, and document my academic journey.
+        </p>
 
+        <h4 class="mt-4">Explore the Site:</h3>
+        <ul>
+          <li><a href="{{ "/about/#about-me" | relative_url }}">About Me</a>: Get to know my academic path and personal story.</li>
+          <li><a href="{{ "/phd" | relative_url }}">PhD Research</a>: Deep dive into my PhD research.</li>
+          <li><a href="{{ "/posts" | relative_url }}">Blog Posts</a>: Read reflections and updates from my journey.</li>
+          <li><a href="{{ "/research-dissemination" | relative_url }}">Research Dissemination</a>: Browse my publications, talks, and projects.</li>
+          <li><a href="{{ "/contact" | relative_url }}">Contact</a>: Get in touch with me directly.</li>
+        </ul>
+      </section>
+      <hr>
+
+
+      <!-- Recent Posts -->
+      <section class="mt-5">
+        <h1 class="mb-4">Recent Posts</h3>
+
+        {% for post in site.posts limit: 2 %}
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             <h2 class="post-title">{{ post.title }}</h2>
@@ -41,26 +66,24 @@ layout: default
             <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
             {% endif %}
           </a>
-          <p class="post-meta">Posted by
+          <p class="post-meta">Posted by 
             {% if post.author %}
-            {{ post.author }}
+              {{ post.author }}
             {% else %}
-            {{ site.author }}
+              {{ site.author }}
             {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
+            on {{ post.date | date: '%B %d, %Y' }} 
+            &middot; {% include read_time.html content=post.content %}
           </p>
         </article>
-
         <hr>
-
         {% endfor %}
 
-        <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
+          <a class="btn btn-primary float-right" href="{{ "/posts" | relative_url }}">View All Posts &rarr;</a>
         </div>
+      </section>
 
-      </div>
     </div>
   </div>
+</div>
