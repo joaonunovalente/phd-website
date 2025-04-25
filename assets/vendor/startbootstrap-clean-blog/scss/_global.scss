@@ -27,6 +27,16 @@ a {
     }
 }
 
+footer a {
+    color: $gray-900;
+  
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+  
+
 blockquote {
     font-style: italic;
     color: $gray-600;
