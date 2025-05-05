@@ -56,3 +56,11 @@ html {
   }
 }
 
+
+a.collapsed .rotate-icon {
+  transform: rotate(0deg);
+}
+
+a:not(.collapsed) .rotate-icon {
+  transform: rotate(180deg);
+}
