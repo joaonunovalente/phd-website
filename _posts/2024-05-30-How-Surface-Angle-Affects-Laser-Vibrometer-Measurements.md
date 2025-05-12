@@ -6,11 +6,13 @@ date: 2024-05-30 00:00:00 0000
 background: /img/posts/06.jpg
 ---
 
-# Introduction
+## Introduction
 
-This experiment investigates how varying the surface reflection angle affects laser vibrometer measurements. A vibrometer is aligned at several angles relative to the motion of a shaker’s stinger — orthogonally (0º), and at ±20º, ±30º, and ±45º. The results are compared to assess the accuracy of angle-corrected reconstructions.
+This experiment investigates how varying the surface reflection angle affects laser vibrometer measurements. A vibrometer is aligned at several angles relative to the motion of a shaker’s stinger — orthogonally (0º), and at ±20º, ±30º, and ±45º. The results are compared to assess the accuracy of angle-corrected reconstructions.<br/><br/>
 
-# Protocol
+---
+
+## Protocol
 
 1. **Baseline Measurement**: The vibrometer is initially aligned orthogonally (0º) to the shaker stinger. This measurement serves as the ground truth reference.
 
@@ -19,11 +21,11 @@ This experiment investigates how varying the surface reflection angle affects la
 3. **Correction and Averaging**: Opposing angle pairs are averaged and corrected using cosine projection to estimate the longitudinal component.
 <figure style="text-align: center;">
   <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="img-fit" alt="Chart" />
-</figure>
+</figure><br/><br/>
 
 ---
 
-# Mathematical Background
+## Mathematical Background
 
 ### 1. Projection Correction
 
@@ -65,11 +67,11 @@ Where:
 
 - 0 dB means perfect match  
 - Positive values indicate overestimation  
-- Negative values indicate underestimation
+- Negative values indicate underestimation<br/><br/>
 
 ---
 
-# Results
+## Results
 
 ### Orthogonal vs. Reconstructed Velocity
 
@@ -91,17 +93,18 @@ The relative error (in decibels) quantifies how much each estimate deviates from
 
 ---
 
-# Conclusions
+## Conclusions
 
 Here's the two main conclusions:
 
 - Non-orthogonal angles can be corrected using cosine projection.
-- Averaging across pair angles improves the results, since it cancels the in-plain vibrations (x and y).
+- Averaging across pair angles improves the results, since it cancels the in-plain vibrations (x and y).<br/><br/>
+
 
 ---
 
-# Code and Data
+## Code and Data
 
 The full source code and experimental data used in this study are available on GitHub:
 
-- **[github.com/joaonunovalente/vibrometer-analysis](https://github.com/joaonunovalente/vibrometer-analysis)**
+- **[github.com/joaonunovalente/vibrometer-analysis](https://github.com/joaonunovalente/vibrometer-analysis)**<br/><br/>
