@@ -64,3 +64,12 @@ a.collapsed .rotate-icon {
 a:not(.collapsed) .rotate-icon {
   transform: rotate(180deg);
 }
+
+.img-fit {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+
