@@ -2,16 +2,15 @@
 layout: post
 title: How Surface Angle Affects Laser Vibrometer Measurements
 subtitle: A practical study of vibrometer alignment effects on FRF estimates
-date: 2025-04-25 00:00:00 0000
+date: 2024-05-30 00:00:00 0000
 background: /img/posts/06.jpg
 ---
 
----
-# Experiment Protocol and Results Analysis
+# Introduction
 
 This experiment investigates how varying the surface reflection angle affects laser vibrometer measurements. A vibrometer is aligned at several angles relative to the motion of a shaker’s stinger — orthogonally (0º), and at ±20º, ±30º, and ±45º. The results are compared to assess the accuracy of angle-corrected reconstructions.
 
-## Protocol
+# Protocol
 
 1. **Baseline Measurement**: The vibrometer is initially aligned orthogonally (0º) to the shaker stinger. This measurement serves as the ground truth reference.
 
@@ -20,12 +19,11 @@ This experiment investigates how varying the surface reflection angle affects la
 3. **Correction and Averaging**: Opposing angle pairs are averaged and corrected using cosine projection to estimate the longitudinal component.
 <figure style="text-align: center;">
   <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="img-fit" alt="Chart" />
-  <figcaption>Relative Error Compared to Orthogonal Measurement</figcaption>
 </figure>
 
 ---
 
-## Methodology and Mathematical Background
+# Mathematical Background
 
 ### 1. Projection Correction
 
@@ -71,7 +69,7 @@ Where:
 
 ---
 
-## Results
+# Results
 
 ### Orthogonal vs. Reconstructed Velocity
 
@@ -93,14 +91,16 @@ The relative error (in decibels) quantifies how much each estimate deviates from
 
 ---
 
-## Conclusions
+# Conclusions
+
+Here's the two main conclusions:
 
 - Non-orthogonal angles can be corrected using cosine projection.
-- Averaging across multiple angles improves robustness.
+- Averaging across pair angles improves the results, since it cancels the in-plain vibrations (x and y).
 
 ---
 
-## Code and Data
+# Code and Data
 
 The full source code and experimental data used in this study are available on GitHub:
 
