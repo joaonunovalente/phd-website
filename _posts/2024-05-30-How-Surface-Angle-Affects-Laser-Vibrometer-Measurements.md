@@ -21,7 +21,7 @@ This experiment investigates how varying the surface reflection angle affects la
 3. **Correction and Averaging**: Opposing angle pairs are averaged and corrected using cosine projection to estimate the longitudinal component.
 <figure style="text-align: center;">
   <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="img-fit" alt="Chart" />
-</figure><br/><br/>
+</figure>
 
 ---
 
