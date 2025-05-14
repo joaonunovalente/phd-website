@@ -105,6 +105,4 @@ Here's the two main conclusions:
 
 ## Code and Data
 
-The full source code and experimental data used in this study are available on GitHub:
-
-- **[github.com/joaonunovalente/vibrometer-analysis](https://github.com/joaonunovalente/vibrometer-analysis)**<br/><br/>
+The full source code and experimental data used in this study are available on  [GitHub PhD repository](https://github.com/joaonunovalente/phd).<br/><br/>
