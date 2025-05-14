@@ -89,3 +89,23 @@
     $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
+
+<div class="lightbox-overlay" id="lightbox-overlay">
+  <img id="lightbox-image" src="" alt="Enlarged Image">
+</div>
+
+<script>
+  document.querySelectorAll('.lightbox').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const overlay = document.getElementById('lightbox-overlay');
+      const lightboxImage = document.getElementById('lightbox-image');
+      lightboxImage.src = this.href;
+      overlay.style.display = 'flex';
+    });
+  });
+
+  document.getElementById('lightbox-overlay').addEventListener('click', function () {
+    this.style.display = 'none';
+  });
+</script>
