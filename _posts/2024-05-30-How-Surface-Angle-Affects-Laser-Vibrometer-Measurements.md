@@ -21,8 +21,8 @@ This experiment investigates how varying the surface reflection angle affects la
 3. **Correction and Averaging**: Opposing angle pairs are averaged and corrected using cosine projection to estimate the longitudinal component.
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="lightbox">
-    <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="img-fit" alt="Chart" />
+  <a href="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="lightbox">
+    <img src="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Setup.png" class="img-fit" alt="Chart" />
   </a>
 </figure>
 
@@ -82,8 +82,8 @@ Where:
 Comparison of the orthogonal velocity measurement and the averaged reconstruction from all corrected angle pairs:
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Orthogonal_vs_Estimates_Magnitude.jpg" class="lightbox">
-    <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Orthogonal_vs_Estimates_Magnitude.jpg" class="img-fit" alt="Chart" />
+  <a href="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Orthogonal_vs_Estimates_Magnitude.jpg" class="lightbox">
+    <img src="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Orthogonal_vs_Estimates_Magnitude.jpg" class="img-fit" alt="Chart" />
   </a>
 </figure>
 
@@ -92,8 +92,8 @@ Comparison of the orthogonal velocity measurement and the averaged reconstructio
 This plot shows the corrected measurements from each angle pair individually:
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Angle_Pairs_Magnitude.jpg" class="lightbox">
-    <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Angle_Pairs_Magnitude.jpg" class="img-fit" alt="Chart" />
+  <a href="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Angle_Pairs_Magnitude.jpg" class="lightbox">
+    <img src="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Angle_Pairs_Magnitude.jpg" class="img-fit" alt="Chart" />
   </a>
 </figure>
 
@@ -102,8 +102,8 @@ This plot shows the corrected measurements from each angle pair individually:
 The relative error (in decibels) quantifies how much each estimate deviates from the orthogonal reference:
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Relative_Error.jpg" class="lightbox">
-    <img src="/img/posts/2025-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Relative_Error.jpg" class="img-fit" alt="Chart" />
+  <a href="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Relative_Error.jpg" class="lightbox">
+    <img src="/img/posts/2024-04-25-How-Surface-Angle-Affects-Laser-Vibrometer-Measurements/Relative_Error.jpg" class="img-fit" alt="Chart" />
   </a>
 </figure>
 
