@@ -15,28 +15,28 @@
 
 ---
 
-## 🧠 About
+## About
 
 This is my personal academic website, created during my PhD. It includes:
 
-- 🏠 A homepage with a short introduction  
-- 👤 An about page  
-- 📝 Blog-style posts for updates and reflections  
-- 🔬 A dedicated research page  
-- 📫 Contact information  
+- A homepage with a short introduction  
+- An about page  
+- Blog-style posts for updates and reflections  
+- A dedicated research page  
+- Contact information  
 
 Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of the [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) theme.
 
 ---
 
-## 🔗 Live Site
+## Live Site
 
 You can view the website here:  
 **👉 [phd.joaonunovalente.com](https://phd.joaonunovalente.com)**
 
 ---
 
-## 🖼 Preview
+## Preview
 
 Here’s a quick preview of the website layout and pages:
 
@@ -44,6 +44,6 @@ Here’s a quick preview of the website layout and pages:
 
 ---
 
-## 💡 Suggestions & Feedback
+## Suggestions & Feedback
 
 Feel free to [open an issue](https://github.com/joaonunovalente/phd-website/issues).
