@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/logo-gray.svg" alt="João Nuno Valente" width="150"/>
-</p>
-
 <h1 align="center">My PhD Website</h1>
 <p align="center"><em>A personal academic site built during my PhD</em></p>
 
@@ -50,4 +46,4 @@ Here’s a quick preview of the website layout and pages:
 
 ## 💡 Suggestions & Feedback
 
-«Feel free to [open an issue](https://github.com/joaonunovalente/phd-website/issues).
+Feel free to [open an issue](https://github.com/joaonunovalente/phd-website/issues).
