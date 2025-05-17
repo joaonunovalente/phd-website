@@ -1,30 +1,53 @@
-# My PhD Website
+<p align="center">
+  <img src="assets/logo-gray.svg" alt="João Nuno Valente" width="150"/>
+</p>
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fphd.joaonunovalente.com&style=flat-square)](https://phd.joaonunovalente.com)
-[![Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-CC0000?logo=jekyll&logoColor=white)](https://jekyllrb.com/)
-[![Theme](https://img.shields.io/badge/Theme-Clean%20Blog-2e3a59)](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll)
+<h1 align="center">My PhD Website</h1>
+<p align="center"><em>A personal academic site built during my PhD</em></p>
 
-This is my personal academic website. It includes:
+<p align="center">
+  <a href="https://phd.joaonunovalente.com">
+    <img src="https://img.shields.io/website?url=https%3A%2F%2Fphd.joaonunovalente.com&style=flat-square" alt="Website" />
+  </a>
+  <a href="https://jekyllrb.com/">
+    <img src="https://img.shields.io/badge/Built%20with-Jekyll-CC0000?logo=jekyll&logoColor=white&style=flat-square" alt="Jekyll" />
+  </a>
+  <a href="https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll">
+    <img src="https://img.shields.io/badge/Theme-Clean%20Blog-2e3a59?style=flat-square" alt="Clean Blog Theme" />
+  </a>
+</p>
 
-- A homepage with a short introduction
-- An about page about me
-- Blog-style posts for updates and reflections
-- Research PhD page 
-- Contact information
+---
 
-The website is built using [Jekyll](https://jekyllrb.com/), a simple static site generator, and uses a modified version of the [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) theme by Start Bootstrap.
+## 🧠 About
 
-## Live Site
+This is my personal academic website, created during my PhD. It includes:
 
-You can view the website at **[phd.joaonunovalente.com](https://phd.joaonunovalente.com)**.
+- 🏠 A homepage with a short introduction  
+- 👤 An about page  
+- 📝 Blog-style posts for updates and reflections  
+- 🔬 A dedicated research page  
+- 📫 Contact information  
 
-## Preview
+Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of the [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) theme.
+
+---
+
+## 🔗 Live Site
+
+You can view the website here:  
+**👉 [phd.joaonunovalente.com](https://phd.joaonunovalente.com)**
+
+---
+
+## 🖼 Preview
 
 Here’s a quick preview of the website layout and pages:
 
 ![Website Preview](assets/gif.gif)
 
+---
 
-## Suggestions & Feedback
+## 💡 Suggestions & Feedback
 
-Please feel free to [open an issue](https://github.com/joaonunovalente/phd-website/issues).
+«Feel free to [open an issue](https://github.com/joaonunovalente/phd-website/issues).
