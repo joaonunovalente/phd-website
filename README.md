@@ -23,7 +23,7 @@ This is my personal academic website, created during my PhD. It includes:
 - An about page  
 - Blog-style posts for updates and reflections  
 - A dedicated research page  
-- Contact information  
+- Contact page  
 
 Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of the [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) theme.
 
