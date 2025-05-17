@@ -31,7 +31,7 @@ Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of
 
 ## Live Site
 
-You can view the website in **[phd.joaonunovalente.com](https://phd.joaonunovalente.com)**
+You can view the website at **[phd.joaonunovalente.com](https://phd.joaonunovalente.com)**
 
 ---
 
