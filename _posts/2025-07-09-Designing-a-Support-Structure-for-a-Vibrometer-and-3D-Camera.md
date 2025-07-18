@@ -48,14 +48,14 @@ Once the 3D model was finalized, I created detailed 2D technical drawings for ea
 
 The result is a set of manufacturing-ready drawings including:  
 
-- [Assembly.pdf](/files/Assembly.pdf) – Full assembly documentation.  
-- [Detail Drawings.pdf](/files/Detail-Drawings.pdf) – Detailed definition drawings for each part.  
+- [Assembly.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/Assembly.pdf) – Full assembly documentation.  
+- [Detail Drawings.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/Detail-Drawings.pdf) – Detailed definition drawings for each part.  
 
 ## Appendices
 
 The datasheets for external components are available here:  
 
-- [Polytec – Vibrometer OFV-505.pdf](/files/polytec-vibrometer-ofv-505-datasheet.pdf)  
-- [Universal Robots – UR10e.pdf](/files/ur10e-datasheet.pdf)  
-- [Nordbo Robotics – NRS-6200-D80.pdf](/files/NRS-6200-D80-Datasheet.pdf)  
+- [Polytec – Vibrometer OFV-505.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/polytec-vibrometer-ofv-505-datasheet.pdf)  
+- [Universal Robots – UR10e.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/ur10e-datasheet.pdf)  
+- [Nordbo Robotics – NRS-6200-D80.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6200-D80-Datasheet.pdf)  
 <br>
