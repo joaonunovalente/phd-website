@@ -58,4 +58,6 @@ The datasheets for external components are available here:
 - [Polytec – Vibrometer OFV-505.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/polytec-vibrometer-ofv-505-datasheet.pdf)  
 - [Universal Robots – UR10e.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/ur10e-datasheet.pdf)  
 - [Nordbo Robotics – NRS-6200-D80.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6200-D80-Datasheet.pdf)  
+- [Nordbo Robotics – NRS-6 User Manual.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6-for-Universal-Robots-User-Manual.pdf)  
+
 <br>
