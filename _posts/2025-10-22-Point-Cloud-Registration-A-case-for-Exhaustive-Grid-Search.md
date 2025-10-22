@@ -195,7 +195,7 @@ In contrast, EGS — despite being a featureless, non-learning approach — achi
 # Determing the reflection angles on 3D laser Vibrometry
 
 
-The experiment aims to determine the laser reflection angless when a 3D vibrometer measures vibration on a complex surface (e.g., a plate, mirror, or component under test).
+The experiment aims to determine the laser reflection angle when a vibrometer measures the vibration of a point on a plate.
 The process consists in performing a point cloud registration to extract the angular orientation of each measurement node.
 
 **Setup**
@@ -212,7 +212,7 @@ The process consists in performing a point cloud registration to extract the ang
 
 - The rotation matrices are extracted from the EGS alignment results and compiled into the table presented in this report.
 
-- By analyzing these transformations, we can map directional reflections (left, right, up, down) and quantify the angular deviation of each node.
+- By analyzing these transformations, we can map directional reflections (x, y and z).
 
 <div style="overflow-x: auto; max-width: 100vw; margin: 0; padding: 0; box-sizing: border-box;">
 <div id="vibrometer-plot" style="width:100%;max-width:800px;height:600px;margin:auto;"></div>
