@@ -507,7 +507,9 @@ The EGS method worked successfully for this experiment, allowing accurate alignm
 
 These results show that EGS can be effectively used in future experiments involving 3D laser vibrometry.
 
-## References
+---
+
+# References
 <div><br></div>
 <div class="ref-row mb-3" style="font-size: 1.1rem;" id="ref1">
   <div class="ref-index">[1]</div>
