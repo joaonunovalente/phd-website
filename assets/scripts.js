@@ -17,3 +17,14 @@ document.querySelectorAll('[data-toggle="collapse"]').forEach(trigger => {
     }
   });
 });
+
+// Copy code to clipboard
+function copyCode(button) {
+  const code = button.closest('.code-container').querySelector('pre code').innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    button.textContent = 'Copied!';
+    setTimeout(() => button.textContent = 'Copy', 1500);
+  }, () => {
+    button.textContent = 'Failed';
+  });
+}
