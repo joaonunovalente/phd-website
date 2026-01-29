@@ -337,10 +337,21 @@ document.addEventListener("DOMContentLoaded", function() {
 This is an example of two point clouds being merged using the EGS method.
 The red and blue point clouds represent scans of the same space captured from different positions.
 
-
-<div style="overflow-x: auto; max-width: 100vw; margin: 0; padding: 0; box-sizing: border-box;">
-<div class="sketchfab-embed-wrapper"> <iframe title="Point cloud merge: 1-6" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="500" src="https://sketchfab.com/models/8ad23a74a3954584a5540ef59f9d6d27/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/point-cloud-merge-1-6-8ad23a74a3954584a5540ef59f9d6d27?utm_medium=embed&utm_campaign=share-popup&utm_content=8ad23a74a3954584a5540ef59f9d6d27" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Point cloud merge: 1-6 </a> by <a href="https://sketchfab.com/joaonunovalente?utm_medium=embed&utm_campaign=share-popup&utm_content=8ad23a74a3954584a5540ef59f9d6d27" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> João Nuno Valente </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=8ad23a74a3954584a5540ef59f9d6d27" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+<div class="sketchfab-container">
+  <iframe
+    title="Coletor de Escape - Nuvem de Pontos"
+    allowfullscreen
+    mozallowfullscreen="true"
+    webkitallowfullscreen="true"
+    allow="autoplay; fullscreen; xr-spatial-tracking"
+    xr-spatial-tracking
+    execution-while-out-of-viewport
+    execution-while-not-rendered
+    web-share
+    src="https://sketchfab.com/models/8ad23a74a3954584a5540ef59f9d6d27/embed">
+  </iframe>
 </div>
+
 
 ## Results
 
