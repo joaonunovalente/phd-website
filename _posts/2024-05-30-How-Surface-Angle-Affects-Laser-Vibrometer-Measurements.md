@@ -7,7 +7,6 @@ background: /img/posts/06.jpg
 tags:
   - vibrometry
   - frf
-  - laser-measurements
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ subtitle: "Using Open3D for surface reconstruction and Level of Detail generatio
 date: 2026-01-29
 background: /img/posts/01.jpg
 tags:
-  - point-clouds
+  - point-cloud
   - mesh-reconstruction
   - python
 ---

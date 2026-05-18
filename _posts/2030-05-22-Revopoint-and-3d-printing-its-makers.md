@@ -6,7 +6,7 @@ date: 2026-05-22
 background: /img/posts/01.jpg
 tags:
   - 3d-scanning
-  - printing
+  - 3d-printing
   - revopoint
 ---
 ## Headings

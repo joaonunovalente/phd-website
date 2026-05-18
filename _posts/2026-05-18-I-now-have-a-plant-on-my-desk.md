@@ -7,6 +7,7 @@ background: /img/posts/01.jpg
 tags:
   - personal
   - desk
+  - plant
 ---
 
 # What my desk looks like

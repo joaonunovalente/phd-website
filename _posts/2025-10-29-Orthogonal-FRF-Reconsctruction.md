@@ -7,7 +7,7 @@ background: /img/posts/01.jpg
 tags:
   - frf
   - vibrometry
-  - reconstruction
+  - 3d-reconstruction
 ---
 
 

@@ -5,9 +5,9 @@ subtitle: "CAD modeling and technical drawings for the UR10e robotic-arm and tri
 date: 2025-07-08
 background: /img/posts/06.jpg
 tags:
-  - hardware
+  - robotic-arm
   - vibrometry
-  - 3d-camera
+  - RGBD-camera
 ---
 
 This project aimed to design a modular support structure for a **Polytec vibrometer OFV-505** and an **ORBBEC Femto Mega 3D camera**. The system needed to be lightweight, robust, and compatible with both a **UR10e robotic arm** and a standard tripod.
