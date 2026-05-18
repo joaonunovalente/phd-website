@@ -5,20 +5,15 @@ subtitle: "A look at my desk and why it is important to have a plant"
 date: 2026-05-18
 background: /img/posts/01.jpg
 ---
-# What my desk look like
 
-I have a big desk in my laboratory.
+# What my desk looks like
 
-With two monitors and a lot of cables. I have a stack of books and papers. And I have my prototype that I used for my research.
+I have a large desk in my laboratory. It has two monitors and many cables, a stack of books and papers, and the prototype I used for my research.
 
-Still, I also felt that my desk wasn't truly mine. So, I bought a plant.
-
-<hr>
+Still, I felt that my desk wasn't truly mine, so I bought a plant.
 
 ## My plant
-
-My plant is commonly called a **Jade Plant**. Its scientific name is **Crassula ovata**.
-
+My plant is commonly known as the jade plant. Its scientific name is **Crassula ovata**.
 
 <figure style="text-align: center; margin-bottom: 2em;">
   <a href="/img/posts/2026-05-18-I-now-have-a-plant-on-my-desk/plant.jpeg" class="lightbox">
@@ -26,4 +21,4 @@ My plant is commonly called a **Jade Plant**. Its scientific name is **Crassula 
   </a>
 </figure>
 
-It is a very popular and resilient succulent plant, characterized by its green, oval, shiny, and fleshy leaves that store water.
+It is a popular, resilient succulent characterized by its glossy, oval, fleshy leaves that store water.
