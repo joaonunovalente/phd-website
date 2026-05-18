@@ -4,6 +4,10 @@ title: How Surface Angle Affects Laser Vibrometer Measurements
 subtitle: A practical study of vibrometer alignment effects on FRF estimates
 date: 2024-05-30
 background: /img/posts/06.jpg
+tags:
+  - vibrometry
+  - frf
+  - laser-measurements
 ---
 
 ## Introduction

@@ -4,6 +4,10 @@ title: "Pose Estimation and FRF Reconstruction from Oblique Laser Measurements"
 subtitle: "Combining 3D alignment and projection correction to recover orthogonal velocity components"
 date: 2025-05-15
 background: /img/posts/04.jpg
+tags:
+  - vibrometry
+  - frf
+  - pose-estimation
 ---
 
 # Part I – Pose Estimation

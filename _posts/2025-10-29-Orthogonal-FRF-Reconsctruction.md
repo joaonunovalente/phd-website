@@ -4,6 +4,10 @@ title: "An atempted to do an orthogonal FRF reconstruction of a rectangular plat
 subtitle: "Comparison of Frequency Response Functions between accelerometer and vibrometer measurements, and orthogonal reconstruction."
 date: 2025-10-29
 background: /img/posts/01.jpg
+tags:
+  - frf
+  - vibrometry
+  - reconstruction
 ---
 
 

@@ -4,6 +4,10 @@ title: "Revopoint and 3D printing its markers"
 subtitle: "Obtaining a point cloud by perfoming a reconstruction a solid object"
 date: 2026-05-22
 background: /img/posts/01.jpg
+tags:
+  - 3d-scanning
+  - printing
+  - revopoint
 ---
 ## Headings
 # Heading 1

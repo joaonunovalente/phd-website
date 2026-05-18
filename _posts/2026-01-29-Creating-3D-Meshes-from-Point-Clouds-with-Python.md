@@ -4,6 +4,10 @@ title: "Creating 3D Meshes from Point Clouds with Python"
 subtitle: "Using Open3D for surface reconstruction and Level of Detail generation"
 date: 2026-01-29
 background: /img/posts/01.jpg
+tags:
+  - point-clouds
+  - mesh-reconstruction
+  - python
 ---
 
 # Some context...

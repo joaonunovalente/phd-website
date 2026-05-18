@@ -4,6 +4,9 @@ title: "I now have a plant on my desk"
 subtitle: "A look at my desk and why it is important to have a plant"
 date: 2026-05-18
 background: /img/posts/01.jpg
+tags:
+  - personal
+  - desk
 ---
 
 # What my desk looks like
