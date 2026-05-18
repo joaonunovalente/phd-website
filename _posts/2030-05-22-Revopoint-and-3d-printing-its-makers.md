@@ -1,0 +1,90 @@
+---
+layout: post
+title: "Revopoint and 3D printing its markers"
+subtitle: "Obtaining a point cloud by perfoming a reconstruction a solid object"
+date: 2026-05-22
+background: /img/posts/01.jpg
+---
+## Headings
+# Heading 1
+## Heading 2
+### Heading 3
+
+<hr>
+
+## Alerts
+
+Several alerts. 
+
+> **Success:** Your changes were saved successfully!
+{: .alert .alert-success}
+
+> **Info:** You can update your profile in the settings page.
+{: .alert .alert-info}
+
+> **Warning:** Proceed with caution!
+{: .alert .alert-warning}
+
+> **Danger:** This will permanently delete your account.
+{: .alert .alert-danger}
+
+> **Note:** This feature is in beta.
+{: .alert .alert-secondary}
+
+---
+
+## Code
+
+### Markdown code snippet
+```python
+#!/usr/bin/env python3
+import open3d as o3d
+import copy
+import numpy as np
+```
+
+### HTML code snippet
+
+This is done using **highlight.js** library.
+
+<div class="code-container">
+  <div class="code-header">
+    <div class="filename">main.py</div>
+    <button  onclick="copyCode(this)">Copy</button>
+  </div>
+  <pre class="code-box"><code class="language-python">
+#!/usr/bin/env python3
+import open3d as o3d
+import copy
+import numpy as np
+from pathlib import Path
+
+
+# ============================================================
+# Configuration
+# ============================================================
+
+INPUT_PLY = Path("../DATA/point-cloud.ply")
+OUTPUT_DIR = Path("../RESULTS")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+VOXEL_SIZE = 0.01
+OUTLIER_NB_NEIGHBORS = 30
+OUTLIER_STD_RATIO = 2.0
+
+NORMAL_RADIUS_MULT = 15
+NORMAL_MAX_NN = 50
+NORMAL_ORIENT_K = 50
+
+POISSON_DEPTH = 9
+POISSON_SCALE = 1.1
+POISSON_DENSITY_QUANTILE = 0.05
+
+LOD_TARGETS = [100_000, 50_000, 10_000]
+
+
+print("Meshing complete")
+  </code></pre>
+</div>
+
+
