@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I now have a plant on my desk"
-subtitle: "A look at my desk and why it is important to have a plant"
+subtitle: "A look at my desk and why I decided to acquire a plant"
 date: 2026-05-18
 background: /img/posts/01.jpg
 tags:
