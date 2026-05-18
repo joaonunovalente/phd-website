@@ -23,7 +23,7 @@ layout: default
               content=page.content %}
             </span>
             {% if page.tags and page.tags.size > 0 %}
-            <div class="post-tags mt-3">
+            <div class="post-tags mt-4">
               {% for tag in page.tags %}
               <a class="tag-badge" href="{{ '/posts/?tag=' | relative_url }}{{ tag | uri_escape }}">{{ tag }}</a>
               {% endfor %}

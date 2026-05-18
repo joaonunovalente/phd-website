@@ -5,9 +5,9 @@ subtitle: "Using EGS to determine the reflection angles on 3D laser vibrometry"
 date: 2025-10-22
 background: /img/posts/01.jpg
 tags:
-  - point-clouds
+  - point-cloud
   - registration
-  - robotics
+  - egs
 ---
 
 # Point Cloud Registration: A case for Exhaustive Grid Search
