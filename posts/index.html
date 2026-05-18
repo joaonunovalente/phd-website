@@ -4,7 +4,43 @@ title: Posts
 description: "Things I have done."
 background: '/img/bg-post.jpg'
 ---
-<h1 class="page-title mb-4">All Posts</h1>
+<div class="d-flex align-items-center justify-content-between mb-4">
+  <h1 class="page-title mb-0">All Posts</h1>
+  <!-- Desktop search -->
+  <div class="d-none d-md-block search-box-wrapper">
+    <input 
+      type="text" 
+      id="search-posts-input" 
+      class="search-box" 
+      placeholder="Search posts..."
+      autocomplete="off"
+    />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/>
+      <path d="m21 21-4.35-4.35"/>
+    </svg>
+  </div>
+  <!-- Mobile search button -->
+  <button 
+    type="button" 
+    class="d-md-none btn btn-link p-0" 
+    id="mobile-search-btn"
+    aria-label="Search posts"
+  >
+    <i class="fa fa-search fa-lg"></i>
+  </button>
+</div>
+
+<!-- Mobile search field (hidden by default) -->
+<div id="mobile-search-container" class="d-none mb-3">
+  <input 
+    type="text" 
+    id="search-posts-input-mobile" 
+    class="form-control" 
+    placeholder="Search posts..."
+    autocomplete="off"
+  />
+</div>
 
 <div class="post-filter-bar mb-4">
   <p id="tag-filter-status" class="tag-filter-status mb-2"></p>
@@ -13,7 +49,7 @@ background: '/img/bg-post.jpg'
 
 <hr>
 <div data-post-filter>
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 
   <div class="post-item" data-post-tags="{{ post.tags | join: ',' | downcase }}">
     <article class="post-preview">
@@ -47,5 +83,60 @@ background: '/img/bg-post.jpg'
 
 {% endfor %}
 </div>
+
+<!-- Pagination -->
+{% if paginator.total_pages > 1 %}
+<nav aria-label="Page navigation" class="mb-5">
+  <ul class="pagination justify-content-center">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <li class="page-item">
+          <a class="page-link" href="{{ '/posts/' | relative_url }}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span> Previous
+          </a>
+        </li>
+      {% else %}
+        <li class="page-item">
+          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span> Previous
+          </a>
+        </li>
+      {% endif %}
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">&laquo; Previous</span>
+      </li>
+    {% endif %}
+
+    {% for page_num in (1..paginator.total_pages) %}
+      {% if page_num == paginator.page %}
+        <li class="page-item active">
+          <span class="page-link">{{ page_num }}</span>
+        </li>
+      {% else %}
+        <li class="page-item">
+          {% if page_num == 1 %}
+            <a class="page-link" href="{{ '/posts/' | relative_url }}">{{ page_num }}</a>
+          {% else %}
+            <a class="page-link" href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}">{{ page_num }}</a>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
+          Next <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <span class="page-link">Next &raquo;</span>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}
 
 <p class="tag-empty-state d-none" data-empty-state>No posts match this tag.</p>

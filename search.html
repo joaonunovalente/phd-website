@@ -1,0 +1,89 @@
+---
+layout: page
+title: Search Posts
+background: 'assets/img/bg-index.jpg'
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      
+      <div class="search-box mb-5">
+        <input 
+          type="text" 
+          id="search-input" 
+          class="form-control form-control-lg" 
+          placeholder="Search posts... (min. 2 characters)"
+          autocomplete="off"
+        />
+      </div>
+
+      <div id="search-results">
+        <p class="text-muted">Start typing to search through posts...</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="{{ '/assets/search.js' | relative_url }}"></script>
+
+<style>
+  .search-box {
+    margin-bottom: 2rem;
+  }
+
+  .search-box input {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .search-box input:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-color: #212529;
+  }
+
+  .search-result {
+    border-bottom: 1px solid #eee;
+    padding: 1.5rem 0;
+    transition: background-color 0.2s;
+  }
+
+  .search-result:last-child {
+    border-bottom: none;
+  }
+
+  .search-result:hover {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin: 0 -1.5rem;
+  }
+
+  .search-result h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .search-result a {
+    color: #212529;
+    text-decoration: none;
+  }
+
+  .search-result a:hover {
+    color: #0085f2;
+  }
+
+  .search-result small {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .search-result p {
+    margin-bottom: 0;
+    color: #555;
+    line-height: 1.6;
+  }
+</style>
