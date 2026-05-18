@@ -42,8 +42,8 @@ background: '/img/bg-post.jpg'
   />
 </div>
 
-<div class="post-filter-bar mb-4">
-  <p id="tag-filter-status" class="tag-filter-status mb-2"></p>
+<div class="post-filter-bar mb-0">
+  <p id="tag-filter-status" class="tag-filter-status mb-0"></p>
   <a id="clear-tag-filter" class="btn btn-outline-secondary btn-sm d-none" href="{{ '/posts/' | relative_url }}">Show all posts</a>
 </div>
 
@@ -87,52 +87,52 @@ background: '/img/bg-post.jpg'
 <!-- Pagination -->
 {% if paginator.total_pages > 1 %}
 <nav aria-label="Page navigation" class="mb-5">
-  <ul class="pagination justify-content-center">
+  <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <li class="page-item">
-          <a class="page-link" href="{{ '/posts/' | relative_url }}" aria-label="Previous">
+        <li class="mx-1 mb-2">
+          <a class="btn btn-outline-primary" href="{{ '/posts/' | relative_url }}" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span> Previous
           </a>
         </li>
       {% else %}
-        <li class="page-item">
-          <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
+        <li class="mx-1 mb-2">
+          <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span> Previous
           </a>
         </li>
       {% endif %}
     {% else %}
-      <li class="page-item disabled">
-        <span class="page-link">&laquo; Previous</span>
+      <li class="mx-1 mb-2">
+        <span class="btn btn-outline-primary disabled" aria-disabled="true">&laquo; Previous</span>
       </li>
     {% endif %}
 
     {% for page_num in (1..paginator.total_pages) %}
       {% if page_num == paginator.page %}
-        <li class="page-item active">
-          <span class="page-link">{{ page_num }}</span>
+        <li class="mx-1 mb-2">
+          <span class="btn btn-primary" aria-current="page">{{ page_num }}</span>
         </li>
       {% else %}
-        <li class="page-item">
+        <li class="mx-1 mb-2">
           {% if page_num == 1 %}
-            <a class="page-link" href="{{ '/posts/' | relative_url }}">{{ page_num }}</a>
+            <a class="btn btn-outline-primary" href="{{ '/posts/' | relative_url }}">{{ page_num }}</a>
           {% else %}
-            <a class="page-link" href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}">{{ page_num }}</a>
+            <a class="btn btn-outline-primary" href="{{ site.paginate_path | replace: ':num', page_num | relative_url }}">{{ page_num }}</a>
           {% endif %}
         </li>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-      <li class="page-item">
-        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
+      <li class="mx-1 mb-2">
+        <a class="btn btn-outline-primary" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
           Next <span aria-hidden="true">&raquo;</span>
         </a>
       </li>
     {% else %}
-      <li class="page-item disabled">
-        <span class="page-link">Next &raquo;</span>
+      <li class="mx-1 mb-2">
+        <span class="btn btn-outline-primary disabled" aria-disabled="true">Next &raquo;</span>
       </li>
     {% endif %}
   </ul>
