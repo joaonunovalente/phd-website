@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "An atempted to do an orthogonal FRF reconstruction of a rectangular plate"
+title: "An attempt to perform an orthogonal FRF reconstruction of a rectangular plate"
 subtitle: "Comparison of Frequency Response Functions between accelerometer and vibrometer measurements, and orthogonal reconstruction."
 date: 2025-10-29
 background: /img/posts/01.jpg

@@ -114,10 +114,10 @@ The relative error (in decibels) quantifies how much each estimate deviates from
 
 ## Conclusions
 
-Here's the two main conclusions:
+Here are the two main conclusions:
 
 - Non-orthogonal angles can be corrected using cosine projection.
-- Averaging across pair angles improves the results, since it cancels the in-plain vibrations (x and y).<br/><br/>
+- Averaging across angle pairs improves the results, since it cancels the in-plane vibrations (x and y).<br/><br/>
 
 
 ---

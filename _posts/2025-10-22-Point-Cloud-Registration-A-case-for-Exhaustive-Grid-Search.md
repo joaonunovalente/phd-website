@@ -196,11 +196,11 @@ While deep learning methods excel on benchmarks that match their training distri
 In contrast, EGS — despite being a featureless, non-learning approach — achieves competitive or superior RR across all benchmarks.
 
 ---
-# Determing the reflection angles on 3D laser Vibrometry
+# Determining the reflection angles on 3D laser vibrometry
 
 
 The experiment aims to determine the laser reflection angle when a vibrometer measures the vibration of a point on a plate.
-The process consists in performing a point cloud registration to extract the angular orientation of each measurement node.
+The process consists of performing point-cloud registration to extract the angular orientation of each measurement node.
 
 **Setup**
 
@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div><br></div>
 
-> **Note:** Only measurements 1 to 7 are showed, since they were measured in the same plane. The other measurements were done on different horizontal planes.
+> **Note:** Only measurements 1 to 7 are shown, since they were measured in the same plane. The other measurements were done on different horizontal planes.
 {: .alert .alert-secondary}
 
 ### Point Cloud Registration: Example

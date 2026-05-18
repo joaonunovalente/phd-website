@@ -14,7 +14,7 @@ tags:
 
 One of my ideas is to perform a 3D reconstruction of a structure in order to generate its 3D mesh. This involves using [SLAM methods](https://edexheim.github.io/mast3r-slam/) or [similar techniques](https://fast3r-3d.github.io/). Some ask for RGB-D point clouds, and others for 2D images.
 
-## UR10e with FETMO Mega camera
+## UR10e with FEMTO Mega camera
 
 To capture the point clouds needed for 3D reconstruction, I used the UR10e robotic arm equipped with a FEMTO Mega camera. The robot can move around the object, capturing it from multiple angles.
 
@@ -73,7 +73,7 @@ I generated a detailed point cloud of the manifold, which you can explore intera
 
 ## 3D mesh conversion
 
-I created 3D meshes from raw point cloud data using Python, following a [practical tutorial](https://medium.com/data-science/5-step-guide-to-generate-3d-meshes-from-point-clouds-with-python-36bad397d8ba)  on automatic mesh generation and surface reconstruction from [Florent Poux](https://github.com/florentPoux).
+I created 3D meshes from raw point cloud data using Python, following a [practical tutorial](https://medium.com/data-science/5-step-guide-to-generate-3d-meshes-from-point-clouds-with-python-36bad397d8ba) on automatic mesh generation and surface reconstruction from [Florent Poux](https://github.com/florentPoux).
 
 
 This post explains the process to transform point clouds into clean, usable 3D meshes, including generating multiple Levels of Detail (LoD).
@@ -100,7 +100,7 @@ I followed these main steps, adapted from the tutorial:
    - Simplify the mesh to various triangle counts for performance tuning  
 
 5. **Export and visualize results**  
-   - Save meshes in the format `.ply`. But they can also be saved in formats like `.obj`, and `.stl`  
+  - Save meshes in the `.ply` format, but they can also be saved as `.obj` or `.stl`.  
 
 
 ## Results
@@ -143,12 +143,12 @@ I followed these main steps, adapted from the tutorial:
 ## Conclusions
 
 Main conclusions:
-- The BPA mesh captures sharp edges well but requires cleaner input. It is not suited for this kind of meshes.
+- The BPA mesh captures sharp edges well but requires cleaner input. It is not well suited for meshes of this kind.
 - Poisson produces smoother, watertight meshes better suited for our goals.
 
 <div style="margin-bottom: 2em;"></div>
 
-> **Warning:** There are details that the meshes do not show (e.g. some holes on the top and bottom). Which is the result of the input point cloud not being detailed enough.
+> **Warning:** There are details that the meshes do not show (e.g. some holes on the top and bottom). This is due to the input point cloud not being detailed enough.
 {: .alert .alert-warning}
 ---
 
