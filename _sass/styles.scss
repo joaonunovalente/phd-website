@@ -1,2 +1,5 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+// Note: startbootstrap-clean-blog uses @import which is deprecated in Sass 3.0
+// Warnings are silenced in jekyll build output
