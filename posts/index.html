@@ -99,19 +99,19 @@ background: '/img/bg-post.jpg'
       {% if paginator.previous_page == 1 %}
         <li class="mx-1 mb-2">
           <a class="btn btn-outline-primary" href="{{ '/posts/' | relative_url }}" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span> Previous
+            <span aria-hidden="true">&laquo;</span><span class="d-none d-sm-inline"> Previous</span>
           </a>
         </li>
       {% else %}
         <li class="mx-1 mb-2">
           <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path | relative_url }}" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span> Previous
+            <span aria-hidden="true">&laquo;</span><span class="d-none d-sm-inline"> Previous</span>
           </a>
         </li>
       {% endif %}
     {% else %}
       <li class="mx-1 mb-2">
-        <span class="btn btn-outline-primary disabled" aria-disabled="true">&laquo; Previous</span>
+        <span class="btn btn-outline-primary disabled" aria-disabled="true"><span aria-hidden="true">&laquo;</span><span class="d-none d-sm-inline"> Previous</span></span>
       </li>
     {% endif %}
 
@@ -134,12 +134,12 @@ background: '/img/bg-post.jpg'
     {% if paginator.next_page %}
       <li class="mx-1 mb-2">
         <a class="btn btn-outline-primary" href="{{ paginator.next_page_path | relative_url }}" aria-label="Next">
-          Next <span aria-hidden="true">&raquo;</span>
+          <span class="d-none d-sm-inline">Next </span><span aria-hidden="true">&raquo;</span>
         </a>
       </li>
     {% else %}
       <li class="mx-1 mb-2">
-        <span class="btn btn-outline-primary disabled" aria-disabled="true">Next &raquo;</span>
+        <span class="btn btn-outline-primary disabled" aria-disabled="true"><span class="d-none d-sm-inline">Next </span><span aria-hidden="true">&raquo;</span></span>
       </li>
     {% endif %}
   </ul>
