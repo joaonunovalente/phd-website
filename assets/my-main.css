@@ -374,6 +374,13 @@
   margin-bottom: 2rem;
 }
 
+/* Mais espaçamento vertical entre CTA cards em ecrãs pequenos */
+@media (max-width: 768px) {
+  .cta-cards-grid {
+    gap: 2rem 1rem; /* 2rem entre linhas (vertical), 1rem entre colunas (horizontal) */
+  }
+}
+
 .cta-card {
   display: flex;
   flex-direction: column;
@@ -511,7 +518,7 @@
 
   .cta-cards-grid {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2rem 1rem;
   }
 
   .cta-card {
