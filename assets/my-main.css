@@ -73,6 +73,10 @@
   color: #5f6c7a;
 }
 
+.references-content {
+  font-size: 1.1rem;
+}
+
 /* Search styles moved from _includes/scripts.html */
 .page-title {
   margin-bottom: 1rem;
