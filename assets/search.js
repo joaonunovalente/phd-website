@@ -1,6 +1,11 @@
 // Search functionality for posts page
 let postsData = [];
 let currentSearchTerm = '';
+let currentSearchPage = 1;
+let postsGridOriginalHTML = '';
+let paginationOriginalHTML = '';
+let paginationOriginalHidden = true;
+let postsDataPromise = null;
 
 // Load posts data
 async function loadPosts() {
@@ -10,6 +15,73 @@ async function loadPosts() {
   } catch (error) {
     console.error('Error loading posts:', error);
   }
+}
+
+function escapeHtml(value) {
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function getPostsGrid() {
+  return document.querySelector('[data-post-filter]');
+}
+
+function getPaginationContainer() {
+  return document.getElementById('posts-pagination');
+}
+
+function getSearchStatusElement() {
+  return document.getElementById('search-results-status');
+}
+
+function getPostsPerPage() {
+  const postsGrid = getPostsGrid();
+  const value = postsGrid ? Number(postsGrid.dataset.postsPerPage) : NaN;
+  return Number.isFinite(value) && value > 0 ? value : 5;
+}
+
+function getSiteAuthor() {
+  const postsGrid = getPostsGrid();
+  return postsGrid ? postsGrid.dataset.siteAuthor || '' : '';
+}
+
+function renderPostCard(post) {
+  const title = escapeHtml(post.title);
+  const subtitle = post.subtitle ? escapeHtml(post.subtitle) : escapeHtml(post.excerpt);
+  const tags = Array.isArray(post.tags) ? post.tags : [];
+  const tagsMarkup = tags.length > 0 ? `
+        <div class="post-tags">
+          ${tags.map(tag => `<a class="tag-badge" href="/posts/?tag=${encodeURIComponent(tag)}">${escapeHtml(tag)}</a>`).join('')}
+        </div>
+      ` : '';
+  const thumbnailMarkup = post.background ? `
+      <a href="${escapeHtml(post.url)}" class="post-card-thumb-link">
+        <img src="${escapeHtml(post.background)}" alt="${title}" class="post-card-thumb" loading="lazy" />
+      </a>
+    ` : '';
+
+  return `
+  <div class="post-item col-12 mb-4" data-post-tags="${escapeHtml(tags.join(',').toLowerCase())}">
+    <article class="post-card h-100">
+      ${thumbnailMarkup}
+
+      <div class="post-card-body">
+        <a href="${escapeHtml(post.url)}">
+          <h2 class="post-title">${title}</h2>
+          <h3 class="post-subtitle">${subtitle}</h3>
+        </a>
+
+        <p class="post-meta">Posted by ${escapeHtml(getSiteAuthor())} on ${escapeHtml(post.date_display || post.date)}</p>
+
+        ${tagsMarkup}
+      </div>
+
+    </article>
+  </div>`;
 }
 
 // Search and filter posts on the posts page
@@ -41,19 +113,144 @@ function filterPostsOnPage(searchTerm) {
   });
 }
 
+function updateSearchStatus(resultsCount, currentPage, searchTerm) {
+  const status = getSearchStatusElement();
+  if (!status) {
+    return;
+  }
+
+  if (!searchTerm) {
+    status.textContent = '';
+    status.classList.add('d-none');
+    return;
+  }
+
+  if (resultsCount === 0) {
+    status.textContent = 'No posts found. Try a different search term.';
+    status.classList.remove('d-none');
+    return;
+  }
+
+  const perPage = getPostsPerPage();
+  const start = ((currentPage - 1) * perPage) + 1;
+  const end = Math.min(currentPage * perPage, resultsCount);
+  status.textContent = `Showing ${start}-${end} of ${resultsCount} posts for "${searchTerm}"`;
+  status.classList.remove('d-none');
+}
+
+function restoreDefaultPostsView() {
+  const postsGrid = getPostsGrid();
+  const paginationContainer = getPaginationContainer();
+  const status = getSearchStatusElement();
+
+  if (postsGrid && postsGridOriginalHTML) {
+    postsGrid.innerHTML = postsGridOriginalHTML;
+  }
+
+  if (paginationContainer) {
+    paginationContainer.innerHTML = paginationOriginalHTML;
+    paginationContainer.classList.toggle('d-none', paginationOriginalHidden);
+  }
+
+  if (status) {
+    status.textContent = '';
+    status.classList.add('d-none');
+  }
+}
+
+function renderSearchPagination(totalPages, activePage) {
+  const paginationContainer = getPaginationContainer();
+  if (!paginationContainer) {
+    return;
+  }
+
+  if (totalPages <= 1) {
+    paginationContainer.innerHTML = '';
+    paginationContainer.classList.add('d-none');
+    return;
+  }
+
+  const items = [];
+
+  items.push(`
+    <li class="mx-1 mb-2">
+      ${activePage === 1
+        ? '<span class="btn btn-outline-primary disabled" aria-disabled="true"><span aria-hidden="true">&laquo;</span><span class="d-none d-sm-inline"> Previous</span></span>'
+        : `<button type="button" class="btn btn-outline-primary" data-search-page="${activePage - 1}" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="d-none d-sm-inline"> Previous</span></button>`}
+    </li>`);
+
+  for (let page = 1; page <= totalPages; page++) {
+    items.push(`
+      <li class="mx-1 mb-2">
+        ${page === activePage
+          ? `<span class="btn btn-primary" aria-current="page">${page}</span>`
+          : `<button type="button" class="btn btn-outline-primary" data-search-page="${page}">${page}</button>`}
+      </li>`);
+  }
+
+  items.push(`
+    <li class="mx-1 mb-2">
+      ${activePage === totalPages
+        ? '<span class="btn btn-outline-primary disabled" aria-disabled="true"><span class="d-none d-sm-inline">Next </span><span aria-hidden="true">&raquo;</span></span>'
+        : `<button type="button" class="btn btn-outline-primary" data-search-page="${activePage + 1}" aria-label="Next"><span class="d-none d-sm-inline">Next </span><span aria-hidden="true">&raquo;</span></button>`}
+    </li>`);
+
+  paginationContainer.innerHTML = `<ul class="list-unstyled d-flex flex-wrap justify-content-center mb-0">${items.join('')}</ul>`;
+  paginationContainer.classList.remove('d-none');
+}
+
+function renderSearchResults(searchTerm, page = 1) {
+  const postsGrid = getPostsGrid();
+  if (!postsGrid) {
+    return;
+  }
+
+  const normalizedTerm = searchTerm.trim();
+  if (!normalizedTerm) {
+    restoreDefaultPostsView();
+    return;
+  }
+
+  if (!postsData.length) {
+    filterPostsOnPage(normalizedTerm);
+    updateSearchStatus(0, 1, normalizedTerm);
+    return;
+  }
+
+  const matches = searchPosts(normalizedTerm, 1);
+  const perPage = getPostsPerPage();
+  const totalPages = Math.max(1, Math.ceil(matches.length / perPage));
+  const activePage = Math.min(Math.max(page, 1), totalPages);
+  const startIndex = (activePage - 1) * perPage;
+  const pageMatches = matches.slice(startIndex, startIndex + perPage);
+
+  if (pageMatches.length > 0) {
+    postsGrid.innerHTML = pageMatches.map(renderPostCard).join('');
+  } else {
+    postsGrid.innerHTML = '';
+  }
+
+  renderSearchPagination(totalPages, activePage);
+  updateSearchStatus(matches.length, activePage, normalizedTerm);
+}
+
 // Sync search inputs (desktop and mobile)
-function syncSearchInputs(value) {
+async function syncSearchInputs(value) {
   const desktopInput = document.getElementById('search-posts-input');
   const mobileInput = document.getElementById('search-posts-input-mobile');
+  const normalizedValue = value || '';
   
-  if (desktopInput && desktopInput.value !== value) {
-    desktopInput.value = value;
+  if (desktopInput && desktopInput.value !== normalizedValue) {
+    desktopInput.value = normalizedValue;
   }
-  if (mobileInput && mobileInput.value !== value) {
-    mobileInput.value = value;
+  if (mobileInput && mobileInput.value !== normalizedValue) {
+    mobileInput.value = normalizedValue;
   }
   
-  filterPostsOnPage(value);
+  currentSearchTerm = normalizedValue;
+  currentSearchPage = 1;
+  await postsDataPromise;
+  renderSearchResults(normalizedValue, currentSearchPage);
 }
 
 // Display search results on dedicated search page
@@ -84,7 +281,35 @@ function displayResults(results) {
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
-  loadPosts();
+  postsDataPromise = loadPosts();
+
+  const postsGrid = getPostsGrid();
+  const paginationContainer = getPaginationContainer();
+
+  if (postsGrid) {
+    postsGridOriginalHTML = postsGrid.innerHTML;
+  }
+
+  if (paginationContainer) {
+    paginationOriginalHTML = paginationContainer.innerHTML;
+    paginationOriginalHidden = paginationContainer.classList.contains('d-none');
+
+    paginationContainer.addEventListener('click', function(event) {
+      const trigger = event.target.closest('[data-search-page]');
+      if (!trigger) {
+        return;
+      }
+
+      event.preventDefault();
+      const nextPage = Number(trigger.dataset.searchPage);
+      if (!Number.isFinite(nextPage)) {
+        return;
+      }
+
+      currentSearchPage = nextPage;
+      renderSearchResults(currentSearchTerm, currentSearchPage);
+    });
+  }
 
   // Mobile search button toggle
   const mobileSearchBtn = document.getElementById('mobile-search-btn');
@@ -103,14 +328,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Desktop search input
   const searchPostsInput = document.getElementById('search-posts-input');
   if (searchPostsInput) {
-    searchPostsInput.addEventListener('keyup', function() {
+    searchPostsInput.addEventListener('input', function() {
       syncSearchInputs(this.value);
     });
   }
 
   // Mobile search input
   if (mobileSearchInput) {
-    mobileSearchInput.addEventListener('keyup', function() {
+    mobileSearchInput.addEventListener('input', function() {
       syncSearchInputs(this.value);
     });
   }
@@ -118,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Search input on dedicated search page
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
-    searchInput.addEventListener('keyup', function() {
+    searchInput.addEventListener('input', function() {
       if (this.value.trim().length >= 2) {
         const results = searchPosts(this.value);
         displayResults(results);
@@ -138,8 +363,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Search posts (for dedicated search page)
-function searchPosts(query) {
-  if (!query || query.trim().length < 2) {
+function searchPosts(query, minimumLength = 2) {
+  if (!query || query.trim().length < minimumLength) {
     return [];
   }
 

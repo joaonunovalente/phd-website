@@ -7,7 +7,9 @@ layout: null
       "title": {{ post.title | jsonify }},
       "subtitle": {{ post.subtitle | jsonify }},
       "date": "{{ post.date | date: '%Y-%m-%d' }}",
+      "date_display": "{{ post.date | date: '%B %d, %Y' }}",
       "url": "{{ post.url | relative_url }}",
+      {% if post.background %}"background": {{ post.background | relative_url | jsonify }},{% else %}"background": null,{% endif %}
       "excerpt": {{ post.excerpt | strip_html | truncatewords: 30 | jsonify }},
       "content": {{ post.content | strip_html | truncatewords: 100 | jsonify }},
       "tags": {{ post.tags | jsonify }}
