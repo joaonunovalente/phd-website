@@ -11,7 +11,7 @@ tags:
 
 ## Introduction
 
-This experiment investigates how varying the surface reflection angle affects laser vibrometer measurements. A vibrometer is aligned at several angles relative to the motion of a shaker’s stinger — orthogonally (0º), and at ±20º, ±30º, and ±45º. The results are compared to assess the accuracy of angle-corrected reconstructions.<br/><br/>
+This experiment investigates how varying the surface reflection angle affects laser vibrometer measurements. A vibrometer is aligned at several angles relative to the motion of a shaker's stinger — orthogonally (0º), and at ±20º, ±30º, and ±45º. The results are compared to assess the accuracy of angle-corrected reconstructions.<br/><br/>
 
 ---
 

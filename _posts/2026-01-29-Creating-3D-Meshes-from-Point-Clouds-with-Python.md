@@ -31,7 +31,7 @@ The video below demonstrates this concept in action: the UR10e systematically sc
   </div>
 </figure>
 
-Implementing reliable methods to achieve this __has been very challenging__. Even with Gonçalo’s invaluable help last weekend, we couldn’t complete a reconstruction.
+Implementing reliable methods to achieve this __has been very challenging__. Even with Gonçalo's invaluable help last weekend, we couldn't complete a reconstruction.
 
 Therefore, I decided to split the task into two parts:
 - 3D reconstruction (postponed)

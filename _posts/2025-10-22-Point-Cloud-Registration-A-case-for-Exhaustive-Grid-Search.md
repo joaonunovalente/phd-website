@@ -533,7 +533,7 @@ The full source code and experimental data used are available on [GitHub PhD rep
 <div class="ref-row mb-3" style="font-size: 1.1rem;" id="ref1">
   <div class="ref-index">[1]</div>
   <div >
-    D. Bojanić, K. Bartol, J. Forest, T. Petković, and T. Pribanić, “Addressing the generalization of 3D registration methods with a featureless baseline and an unbiased benchmark,” <em>Machine Vision and Applications</em>, vol. 35, no. 3, p. 41, <strong>2024</strong>. <span class="doi-block">DOI: <a href="https://doi.org/10.1007/s00138-024-01510-w" target="_blank">https://doi.org/10.1007/s00138-024-01510-w</a></span>
+    D. Bojanić, K. Bartol, J. Forest, T. Petković, and T. Pribanić, "Addressing the generalization of 3D registration methods with a featureless baseline and an unbiased benchmark," <em>Machine Vision and Applications</em>, vol. 35, no. 3, p. 41, <strong>2024</strong>. <span class="doi-block">DOI: <a href="https://doi.org/10.1007/s00138-024-01510-w" target="_blank">https://doi.org/10.1007/s00138-024-01510-w</a></span>
   </div>
 </div>
     

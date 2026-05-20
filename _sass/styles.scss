@@ -3,3 +3,6 @@
 
 // Note: startbootstrap-clean-blog uses @import which is deprecated in Sass 3.0
 // Warnings are silenced in jekyll build output
+
+// Project overrides and utility helpers
+@import "overrides";

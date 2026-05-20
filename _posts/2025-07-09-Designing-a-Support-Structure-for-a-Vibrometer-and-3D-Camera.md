@@ -35,7 +35,7 @@ Standard ISO 7380 M6 bolts were selected to simplify assembly and ensure compati
 
 ## Integration with Nordbo Robotics Sensor
 
-Although the top plate includes an adapter for the **UR10e robotic arm**, the support structure was primarily designed to integrate with a **Nordbo Robotics NRS-6200-D80 sensor**. This configuration allows the vibrometer and camera assembly to benefit from the sensor’s advanced force-torque capabilities, enabling precise alignment and stable operation during robotic tasks.
+Although the top plate includes an adapter for the **UR10e robotic arm**, the support structure was primarily designed to integrate with a **Nordbo Robotics NRS-6200-D80 sensor**. This configuration allows the vibrometer and camera assembly to benefit from the sensor's advanced force-torque capabilities, enabling precise alignment and stable operation during robotic tasks.
 
 <figure style="text-align: center">
   <a href="/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/NRS-6200-D80.jpg" class="lightbox">
@@ -43,7 +43,7 @@ Although the top plate includes an adapter for the **UR10e robotic arm**, the su
   </a>
 </figure>
 
-As a result, the structure’s dimensions and mounting interfaces have been designed with the Nordbo sensor as the primary interface, rather than for direct UR10e mounting.
+As a result, the structure's dimensions and mounting interfaces have been designed with the Nordbo sensor as the primary interface, rather than for direct UR10e mounting.
 
 ## Technical Drawings
 
