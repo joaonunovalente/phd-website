@@ -29,6 +29,20 @@ Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of
 
 ---
 
+## Live Site
+
+You can view the website at **[PhD.JoaoNunoValente.com](https://phd.joaonunovalente.com)**
+
+---
+
+## Preview
+
+Here's a quick preview of the website layout and pages:
+
+![Website Preview](assets/img/gif.gif)
+
+---
+
 ## Local Development
 
 The project uses Jekyll with a small Node-based asset workflow. From a fresh clone, install the Ruby and Node dependencies first:
@@ -57,20 +71,6 @@ If you prefer running Jekyll directly, these commands are equivalent:
 bundle exec jekyll build
 bundle exec jekyll serve --livereload
 ```
-
----
-
-## Live Site
-
-You can view the website at **[phd.joaonunovalente.com](https://phd.joaonunovalente.com)**
-
----
-
-## Preview
-
-Here's a quick preview of the website layout and pages:
-
-![Website Preview](assets/img/gif.gif)
 
 ---
 
