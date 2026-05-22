@@ -29,6 +29,37 @@ Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of
 
 ---
 
+## Local Development
+
+The project uses Jekyll with a small Node-based asset workflow. From a fresh clone, install the Ruby and Node dependencies first:
+
+```bash
+bundle install
+npm install
+```
+
+Then use one of the following commands:
+
+```bash
+# Build the site into _site/
+npm run build
+
+# Serve the site locally with live reload
+npm run serve
+
+# Serve the generated site folder with BrowserSync
+npm run start
+```
+
+If you prefer running Jekyll directly, these commands are equivalent:
+
+```bash
+bundle exec jekyll build
+bundle exec jekyll serve --livereload
+```
+
+---
+
 ## Live Site
 
 You can view the website at **[phd.joaonunovalente.com](https://phd.joaonunovalente.com)**
