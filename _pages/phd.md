@@ -270,7 +270,7 @@ background: /assets/img/bg-phd.jpg
             References <i class="fas fa-chevron-down ml-2 rotate-icon"></i>
           </a>
         </h4>
-        <a href="/assets/references.bib" download class="btn btn-outline-primary d-none d-sm-block" title="Download BibTeX file">
+        <a href="/assets/data/references.bib" download class="btn btn-outline-primary d-none d-sm-block" title="Download BibTeX file">
           <i class="fas fa-download"></i> BibTeX
         </a>
       </div>

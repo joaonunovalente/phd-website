@@ -3,13 +3,13 @@
 <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/scripts.js" | relative_url }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<script src="{{"/assets/scripts.js" | relative_url }}"></script>
+<script src="{{"/assets/js/scripts.js" | relative_url }}"></script>
 
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->
   <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js" | relative_url }}"></script>
   <!-- Contact form handler (moved to assets) -->
-  <script src="{{"/assets/contact-form.js" | relative_url }}"></script>
+  <script src="{{"/assets/js/contact-form.js" | relative_url }}"></script>
 {% endif %}
 
 <script>
@@ -20,8 +20,8 @@
 
 {% if page.url contains 'posts' %}
 <!-- Search functionality -->
-<script src="{{"/assets/search.js" | relative_url }}"></script>
+<script src="{{"/assets/js/search.js" | relative_url }}"></script>
 {% endif %}
 
 {% include lightbox.html %}
-<script src="{{"/assets/lightbox.js" | relative_url }}"></script>
+<script src="{{"/assets/js/lightbox.js" | relative_url }}"></script>

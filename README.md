@@ -39,7 +39,7 @@ You can view the website at **[phd.joaonunovalente.com](https://phd.joaonunovale
 
 Here's a quick preview of the website layout and pages:
 
-![Website Preview](assets/gif.gif)
+![Website Preview](assets/img/gif.gif)
 
 ---
 
