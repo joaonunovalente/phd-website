@@ -11,7 +11,6 @@ tags:
 ---
 
 
-
 ## Objective
 
 The objective of this report is to compare Frequency Response Functions (FRFs) obtained from different measurement techniques and verify whether orthogonal and geometric projection reconstructions provide consistent results.
