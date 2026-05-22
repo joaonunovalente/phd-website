@@ -3,7 +3,7 @@ layout: post
 title: "Creating 3D Meshes from Point Clouds with Python"
 subtitle: "Using Open3D for surface reconstruction and Level of Detail generation"
 date: 2026-01-29
-background: /img/posts/08.jpg
+background: /assets/img/posts/08.jpg
 tags:
   - point-cloud
   - mesh-reconstruction
@@ -46,8 +46,8 @@ For our latest experiment, Professor Rui Moreira and I selected a __exhaust mani
 Below is a photograph of the manifold.
 
 <figure style="text-align: center; margin-bottom: 2em;">
-  <a href="/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/exhaust-manifold.png" class="lightbox">
-    <img src="/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/exhaust-manifold.png" class="img-fit" alt="Exhaust Manifold" />
+  <a href="/assets/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/exhaust-manifold.png" class="lightbox">
+    <img src="/assets/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/exhaust-manifold.png" class="img-fit" alt="Exhaust Manifold" />
   </a>
 </figure>
 
@@ -156,6 +156,6 @@ Main conclusions:
 
 The full source code and experimental data used are available on [GitHub PhD repository](https://github.com/joaonunovalente/PhD/tree/main/Code/pointcloud-to-mesh).
 
-The article _5-Step Guide to generate 3D meshes from point clouds with Python_ from __Florent Poux__ can be found [here](/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/files/5-Step%20Guide%20to%20generate%203D%20meshes%20from%20point%20clouds%20with%20Python%20-%20Florent%20Poux.pdf).
+The article _5-Step Guide to generate 3D meshes from point clouds with Python_ from __Florent Poux__ can be found [here](/assets/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/files/5-Step%20Guide%20to%20generate%203D%20meshes%20from%20point%20clouds%20with%20Python%20-%20Florent%20Poux.pdf).
 
 

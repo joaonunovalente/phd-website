@@ -3,7 +3,7 @@ layout: post
 title: "An attempt to perform an orthogonal FRF reconstruction of a rectangular plate"
 subtitle: "Comparison of Frequency Response Functions between accelerometer and vibrometer measurements, and orthogonal reconstruction."
 date: 2025-10-29
-background: /img/posts/09.jpg
+background: /assets/img/posts/09.jpg
 tags:
   - frf
   - vibrometry
@@ -25,8 +25,8 @@ The following figures present representative FRF magnitude comparisons for selec
 ## Orthogonal and Vibrometer Comparison (0°)
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Orthogonal-Accelerometer-vs-Vibrometer.png" class="lightbox">
-    <img src="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Orthogonal-Accelerometer-vs-Vibrometer.png" class="img-fit" alt="Comparison of orthogonal accelerometer and vibrometer FRFs at 0 degrees" />
+  <a href="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Orthogonal-Accelerometer-vs-Vibrometer.png" class="lightbox">
+    <img src="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Orthogonal-Accelerometer-vs-Vibrometer.png" class="img-fit" alt="Comparison of orthogonal accelerometer and vibrometer FRFs at 0 degrees" />
   </a>
 </figure>
 
@@ -35,8 +35,8 @@ The following figures present representative FRF magnitude comparisons for selec
 ## Accelerometer and Vibrometer Comparison (47.9°)
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-X-vs-Vibrometer.png" class="lightbox">
-    <img src="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-X-vs-Vibrometer.png" class="img-fit" alt="Comparison between accelerometer and vibrometer FRFs at 47.9 degrees" />
+  <a href="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-X-vs-Vibrometer.png" class="lightbox">
+    <img src="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-X-vs-Vibrometer.png" class="img-fit" alt="Comparison between accelerometer and vibrometer FRFs at 47.9 degrees" />
   </a>
 </figure>
 
@@ -46,8 +46,8 @@ The following figures present representative FRF magnitude comparisons for selec
 ## Tri-Axial Accelerometer Response
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-tri-axial-response.png" class="lightbox">
-    <img src="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-tri-axial-response.png" class="img-fit" alt="Measured tri-axial accelerometer frequency response comparison" />
+  <a href="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-tri-axial-response.png" class="lightbox">
+    <img src="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/Accelerometer-tri-axial-response.png" class="img-fit" alt="Measured tri-axial accelerometer frequency response comparison" />
   </a>
 </figure>
 
@@ -57,8 +57,8 @@ The following figures present representative FRF magnitude comparisons for selec
 ## FRF Magnitude Reconstruction
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/FRF-Reconstruction.png" class="lightbox">
-    <img src="/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/FRF-Reconstruction.png" class="img-fit" alt="Overlay of reconstructed FRF magnitudes showing orthogonal, angled, and projected responses" />
+  <a href="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/FRF-Reconstruction.png" class="lightbox">
+    <img src="/assets/img/posts/2025-10-29-Orthogonal-FRF-Reconstruction/FRF-Reconstruction.png" class="img-fit" alt="Overlay of reconstructed FRF magnitudes showing orthogonal, angled, and projected responses" />
   </a>
 </figure>
 

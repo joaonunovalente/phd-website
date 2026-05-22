@@ -3,7 +3,7 @@ layout: post
 title: "Point Cloud Registration: A case for Exhaustive Grid Search (EGS)"
 subtitle: "Using EGS to determine the reflection angles on 3D laser vibrometry"
 date: 2025-10-22
-background: /img/posts/01.jpg
+background: /assets/img/posts/01.jpg
 tags:
   - point-cloud
   - registration
@@ -20,7 +20,7 @@ The goal of registration is to estimate the rigid transformation — composed of
 
 
 ## What is Exhaustive Grid Search?
-**Exhaustive Grid Search (EGS)** is a featureless, non-learning method for 3D point cloud registration introduced by [Bojanić et al. (2024)](/img/posts/2025-10-22-Point-Cloud-Registration-A-case-for-Exhaustive-Grid-Search/files/EGS.pdf) <a href="#ref1">[1]</a>. Unlike deep learning–based approaches that rely on neural networks to extract and match features, EGS directly explores the entire transformation space to find the best alignment.
+**Exhaustive Grid Search (EGS)** is a featureless, non-learning method for 3D point cloud registration introduced by [Bojanić et al. (2024)](/assets/img/posts/2025-10-22-Point-Cloud-Registration-A-case-for-Exhaustive-Grid-Search/files/EGS.pdf) <a href="#ref1">[1]</a>. Unlike deep learning–based approaches that rely on neural networks to extract and match features, EGS directly explores the entire transformation space to find the best alignment.
 
 Because EGS does not depend on feature extraction, correspondences, or training data, it generalizes well across different datasets. Despite its simplicity, EGS has been shown to outperform many deep learning–based methods on standard benchmarks such as ETH and FAUST-partial.
 

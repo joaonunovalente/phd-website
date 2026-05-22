@@ -3,7 +3,7 @@ layout: post
 title: "Pose Estimation and FRF Reconstruction from Oblique Laser Measurements"
 subtitle: "Combining 3D alignment and projection correction to recover orthogonal velocity components"
 date: 2025-05-15
-background: /img/posts/04.jpg
+background: /assets/img/posts/04.jpg
 tags:
   - vibrometry
   - frf
@@ -60,8 +60,8 @@ $$
 ### Reconstructed vs. Reference
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Orthogonal_vs_Estimates_Magnitude.jpg" class="lightbox">
-    <img src="/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Orthogonal_vs_Estimate_Magnitude.jpg" class="img-fit" alt="Chart" />
+  <a href="/assets/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Orthogonal_vs_Estimates_Magnitude.jpg" class="lightbox">
+    <img src="/assets/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Orthogonal_vs_Estimate_Magnitude.jpg" class="img-fit" alt="Chart" />
   </a>
 </figure>
 
@@ -70,8 +70,8 @@ $$
 This plot shows the magnitude of each corrected measurement compared to the orthogonal reference:
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Angle_Pairs_Magnitude.jpg" class="lightbox">
-    <img src="/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Angle_Pairs_Magnitude.jpg" class="img-fit" alt="Chart" />
+  <a href="/assets/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Angle_Pairs_Magnitude.jpg" class="lightbox">
+    <img src="/assets/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Angle_Pairs_Magnitude.jpg" class="img-fit" alt="Chart" />
   </a>
 </figure>
 
@@ -87,8 +87,8 @@ $$
 The best result came from the four-angle average, showing reduced error across the spectrum.
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Relative_Error.jpg" class="lightbox">
-    <img src="/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Relative_Error.jpg" class="img-fit" alt="Chart" />
+  <a href="/assets/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Relative_Error.jpg" class="lightbox">
+    <img src="/assets/img/posts/2025-05-16-Pose-Estimation-and-FRF-Reconstruction-from-Oblique-Laser-Measurements/Relative_Error.jpg" class="img-fit" alt="Chart" />
   </a>
 </figure>
 

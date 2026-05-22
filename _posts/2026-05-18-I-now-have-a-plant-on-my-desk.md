@@ -3,7 +3,7 @@ layout: post
 title: "I now have a plant on my desk"
 subtitle: "A look at my desk and why I decided to acquire a plant"
 date: 2026-05-18
-background: /img/posts/07.jpg
+background: /assets/img/posts/07.jpg
 tags:
   - personal
   - desk
@@ -20,8 +20,8 @@ Still, I felt that my desk wasn't truly mine, so I bought a plant.
 My plant is commonly known as the jade plant. Its scientific name is **Crassula ovata**.
 
 <figure style="text-align: center; margin-bottom: 2em;">
-  <a href="/img/posts/2026-05-18-I-now-have-a-plant-on-my-desk/plant.jpeg" class="lightbox">
-    <img src="/img/posts/2026-05-18-I-now-have-a-plant-on-my-desk/plant.jpeg" class="img-fit" alt="A plant" />
+  <a href="/assets/img/posts/2026-05-18-I-now-have-a-plant-on-my-desk/plant.jpeg" class="lightbox">
+    <img src="/assets/img/posts/2026-05-18-I-now-have-a-plant-on-my-desk/plant.jpeg" class="img-fit" alt="A plant" />
   </a>
 </figure>
 

@@ -1,8 +1,7 @@
 ---
-layout: page
 title: About Me
 description: This is what I do.
-background: 'assets/img/bg-about.jpg'
+background: /assets/img/bg-about.jpg
 ---
 <!--------------------------------------------
 ------------ About Me Section ----------------
@@ -22,7 +21,7 @@ background: 'assets/img/bg-about.jpg'
   </div>
   <!-- Image Column -->
   <div class="col-md-5 text-center d-flex align-items-center">
-    <img src="assets/img/about/profile-about.jpg" alt="About Me Image" class="img-fluid rounded">
+    <img src="{{ '/assets/img/about/profile-about.jpg' | relative_url }}" alt="About Me Image" class="img-fluid rounded">
   </div>
 </div>
 <p class="mt-0">
@@ -35,7 +34,7 @@ background: 'assets/img/bg-about.jpg'
 --------------- Institution ------------------
 --------------------------------------------->
 <!-- Institution -->
-<h1 class="mb-5 id="host-institution">Host Institution</h1>
+<h1 class="mb-5" id="host-institution">Host Institution</h1>
 <ul class="nav nav-tabs" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="university-tab" data-toggle="tab" href="#university" role="tab" aria-controls="university" aria-selected="true">
@@ -73,7 +72,7 @@ background: 'assets/img/bg-about.jpg'
         </p>
       </div>
       <div class="col-md-6 text-center d-flex align-items-center">
-        <img src="assets/img/about/university-of-aveiro.jpg" alt="University" class="img-fluid rounded">
+        <img src="{{ '/assets/img/about/university-of-aveiro.jpg' | relative_url }}" alt="University" class="img-fluid rounded">
       </div>
     </div>
     <p class="mt-0">
@@ -96,7 +95,7 @@ background: 'assets/img/bg-about.jpg'
       </div>
       <!-- Image Column -->
       <div class="col-md-6 order-2 text-center d-flex align-items-center">
-        <img src="assets/img/about/department-of-mechanical-engineering.jpg" alt="Department" class="img-fluid rounded">
+        <img src="{{ '/assets/img/about/department-of-mechanical-engineering.jpg' | relative_url }}" alt="Department" class="img-fluid rounded">
       </div>
     </div>
   
@@ -123,7 +122,7 @@ background: 'assets/img/bg-about.jpg'
     </div>
     <!-- Image column (second on all screens) -->
     <div class="col-md-6 order-2 text-center d-flex align-items-center">
-      <img src="assets/img/about/lar.jpeg" alt="LAR" class="img-fluid rounded">
+      <img src="{{ '/assets/img/about/lar.jpeg' | relative_url }}" alt="LAR" class="img-fluid rounded">
     </div>
   </div>
   <p class="mt-0">
@@ -156,10 +155,9 @@ background: 'assets/img/bg-about.jpg'
     <div class="col-md-6">
         <h5>PhD Resources</h5>
         <ul>
-            <li><a target="_blank" rel="noopener noreferrer" href="{{"/notion" | relative_url }}">Notion Dashboard</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="{{ '/notion' | relative_url }}">Notion Dashboard</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://www.zotero.org/joaonunovalente">Zotero profile</a></li>
             <li><a target="_blank" rel="noopener noreferrer" href="https://sketchfab.com/joaonunovalente">SketchFab</a></li>
         </ul>
     </div>
 </div>
-

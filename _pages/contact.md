@@ -1,8 +1,7 @@
 ---
-layout: page
 title: Contact Me
 description: Feel free to reach out to me!
-background: 'assets/img/bg-contact.jpg'
+background: /assets/img/bg-contact.jpg
 form: true
 ---
 

@@ -21,6 +21,18 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
 # Sass/SCSS Configuration
 sass:
   style:           compressed

@@ -3,7 +3,7 @@ layout: post
 title: "Designing a Support Structure for a Vibrometer and 3D Camera"
 subtitle: "CAD modeling and technical drawings for the UR10e robotic-arm and tripod integration"
 date: 2025-07-08
-background: /img/posts/11.jpg
+background: /assets/img/posts/11.jpg
 tags:
   - robotic-arm
   - CAD
@@ -28,8 +28,8 @@ The system was modeled as an assembly with four main custom parts:
 Standard ISO 7380 M6 bolts were selected to simplify assembly and ensure compatibility.
 
 <figure style="text-align: center;">
-  <a href="/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/assembly.png" class="lightbox">
-    <img src="/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/assembly.png" class="img-fit" alt="3D CAD assembly of support structure for Polytec vibrometer and ORBBEC camera mounted on Nordbo Robotics sensor" />
+  <a href="/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/assembly.png" class="lightbox">
+    <img src="/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/assembly.png" class="img-fit" alt="3D CAD assembly of support structure for Polytec vibrometer and ORBBEC camera mounted on Nordbo Robotics sensor" />
   </a>
 </figure>
 
@@ -38,8 +38,8 @@ Standard ISO 7380 M6 bolts were selected to simplify assembly and ensure compati
 Although the top plate includes an adapter for the **UR10e robotic arm**, the support structure was primarily designed to integrate with a **Nordbo Robotics NRS-6200-D80 sensor**. This configuration allows the vibrometer and camera assembly to benefit from the sensor's advanced force-torque capabilities, enabling precise alignment and stable operation during robotic tasks.
 
 <figure style="text-align: center">
-  <a href="/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/NRS-6200-D80.jpg" class="lightbox">
-    <img src="/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/NRS-6200-D80.jpg"  style="width: 500px;" class="img-fit" alt="NRS-6200-D80 Nordbo Robotics sensor" />
+  <a href="/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/NRS-6200-D80.jpg" class="lightbox">
+    <img src="/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/NRS-6200-D80.jpg"  style="width: 500px;" class="img-fit" alt="NRS-6200-D80 Nordbo Robotics sensor" />
   </a>
 </figure>
 
@@ -51,16 +51,16 @@ Once the 3D model was finalized, I created detailed 2D technical drawings for ea
 
 The result is a set of manufacturing-ready drawings including:  
 
-- [Assembly.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/Assembly.pdf) – Full assembly documentation.  
-- [Detail Drawings.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/Detail-Drawings.pdf) – Detailed definition drawings for each part.  
+- [Assembly.pdf](/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/Assembly.pdf) – Full assembly documentation.  
+- [Detail Drawings.pdf](/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/Detail-Drawings.pdf) – Detailed definition drawings for each part.  
 
 ## Appendices
 
 The datasheets for external components are available here:  
 
-- [Polytec – Vibrometer OFV-505.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/polytec-vibrometer-ofv-505-datasheet.pdf)  
-- [Universal Robots – UR10e.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/ur10e-datasheet.pdf)  
-- [Nordbo Robotics – NRS-6200-D80.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6200-D80-Datasheet.pdf)  
-- [Nordbo Robotics – NRS-6 User Manual.pdf](/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6-for-Universal-Robots-User-Manual.pdf)  
+- [Polytec – Vibrometer OFV-505.pdf](/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/polytec-vibrometer-ofv-505-datasheet.pdf)  
+- [Universal Robots – UR10e.pdf](/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/ur10e-datasheet.pdf)  
+- [Nordbo Robotics – NRS-6200-D80.pdf](/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6200-D80-Datasheet.pdf)  
+- [Nordbo Robotics – NRS-6 User Manual.pdf](/assets/img/posts/2025-07-09-Designing-a-Support-Structure-for-a-Vibrometer-and-3D-Camera/files/NRS-6-for-Universal-Robots-User-Manual.pdf)  
 
 <br>

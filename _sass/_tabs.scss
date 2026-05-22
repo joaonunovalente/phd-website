@@ -1,0 +1,32 @@
+// Centered tab navigation used on content pages
+.col-lg-8 .nav.nav-tabs[role="tablist"],
+.col-md-10 .nav.nav-tabs[role="tablist"],
+.mx-auto .nav.nav-tabs[role="tablist"] {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.col-lg-8 .nav.nav-tabs[role="tablist"] .nav-item,
+.col-md-10 .nav.nav-tabs[role="tablist"] .nav-item,
+.mx-auto .nav.nav-tabs[role="tablist"] .nav-item {
+  margin: 0;
+}
+
+.col-lg-8 .nav.nav-tabs[role="tablist"] .nav-link,
+.col-md-10 .nav.nav-tabs[role="tablist"] .nav-link,
+.mx-auto .nav.nav-tabs[role="tablist"] .nav-link {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.9rem;
+}
+
+.col-lg-8 .nav.nav-tabs[role="tablist"] .nav-link.active,
+.col-md-10 .nav.nav-tabs[role="tablist"] .nav-link.active,
+.mx-auto .nav.nav-tabs[role="tablist"] .nav-link.active {
+  background: transparent;
+  border-bottom: 2px solid #0085a1;
+}
