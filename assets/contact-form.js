@@ -15,7 +15,7 @@
         var $this = $("#sendMessageButton");
         $this.prop("disabled", true);
         $.ajax({
-          url: "https://formsubmit.co/ajax/formsubmit-phd@privatebrave.com",
+          url: "https://formsubmit.co/ajax/ab5a3b49cc788ba50b257f422f30951a",
           type: "POST",
           data: {
             name: name,
