@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Creating 3D Meshes from Point Clouds with Python"
-subtitle: "Using Open3D for surface reconstruction and Level of Detail generation"
+title: Creating 3D Meshes from Point Clouds with Python
+subtitle: Using Open3D for surface reconstruction and Level of Detail generation
 date: 2026-01-29
 background: /assets/img/posts/08.jpg
 tags:
@@ -9,7 +9,6 @@ tags:
   - mesh-reconstruction
   - python
 ---
-
 # Some context...
 
 One of my ideas is to perform a 3D reconstruction of a structure in order to generate its 3D mesh. This involves using [SLAM methods](https://edexheim.github.io/mast3r-slam/) or [similar techniques](https://fast3r-3d.github.io/). Some ask for RGB-D point clouds, and others for 2D images.
@@ -31,17 +30,18 @@ The video below demonstrates this concept in action: the UR10e systematically sc
   </div>
 </figure>
 
-Implementing reliable methods to achieve this __has been very challenging__. Even with Gonçalo's invaluable help last weekend, we couldn't complete a reconstruction.
+Implementing reliable methods to achieve this **has been very challenging**. Even with Gonçalo's invaluable help last weekend, we couldn't complete a reconstruction.
 
 Therefore, I decided to split the task into two parts:
-- 3D reconstruction (postponed)
-- 3D mesh surface reconstruction (converting point clouds into 3D meshes)
 
----
+* 3D reconstruction (postponed)
+* 3D mesh surface reconstruction (converting point clouds into 3D meshes)
+
+- - -
 
 # Creating 3D Meshes from Point Clouds with Python
 
-For our latest experiment, Professor Rui Moreira and I selected a __exhaust manifold__ as the test structure. It presents a challenging geometry with multiple complex surfaces, curves, and cavities, making it an ideal candidate to test the robustness of our 3D reconstruction and mesh generation workflow.
+For our latest experiment, Professor Rui Moreira and I selected a **exhaust manifold** as the test structure. It presents a challenging geometry with multiple complex surfaces, curves, and cavities, making it an ideal candidate to test the robustness of our 3D reconstruction and mesh generation workflow.
 
 Below is a photograph of the manifold.
 
@@ -69,39 +69,37 @@ I generated a detailed point cloud of the manifold, which you can explore intera
 </div>
 
 > **Info:** The cylinder visible on the top of the point cloud is an artifact from a bad crop and includes part of a hammer that was unintentionally captured during generation of the point cloud.
-{: .alert .alert-info}
+> {: .alert .alert-info}
 
 ## 3D mesh conversion
 
 I created 3D meshes from raw point cloud data using Python, following a [practical tutorial](https://medium.com/data-science/5-step-guide-to-generate-3d-meshes-from-point-clouds-with-python-36bad397d8ba) on automatic mesh generation and surface reconstruction from [Florent Poux](https://github.com/florentPoux).
 
-
 This post explains the process to transform point clouds into clean, usable 3D meshes, including generating multiple Levels of Detail (LoD).
-
 
 ### My Workflow Overview
 
 I followed these main steps, adapted from the tutorial:
 
 1. **Load and preprocess the point cloud**  
-   - Read raw points  
-   - Remove noise and outliers  
-   - Estimate and orient normals  
 
+   * Read raw points  
+   * Remove noise and outliers  
+   * Estimate and orient normals  
 2. **Mesh reconstruction using two methods**  
-   - Ball Pivoting Algorithm (BPA): rolls a virtual ball over points to form triangles  
-   - Poisson Reconstruction: fits a smooth, watertight surface enveloping the points  
 
+   * Ball Pivoting Algorithm (BPA): rolls a virtual ball over points to form triangles  
+   * Poisson Reconstruction: fits a smooth, watertight surface enveloping the points  
 3. **Mesh cleanup**  
-   - Remove degenerate or duplicated triangles and vertices  
-   - Fix non-manifold edges  
 
+   * Remove degenerate or duplicated triangles and vertices  
+   * Fix non-manifold edges  
 4. **Generate Levels of Detail (LoD)**  
-   - Simplify the mesh to various triangle counts for performance tuning  
 
+   * Simplify the mesh to various triangle counts for performance tuning  
 5. **Export and visualize results**  
-  - Save meshes in the `.ply` format, but they can also be saved as `.obj` or `.stl`.  
 
+* Save meshes in the `.ply` format, but they can also be saved as `.obj` or `.stl`.  
 
 ## Results
 
@@ -121,7 +119,6 @@ I followed these main steps, adapted from the tutorial:
     src="https://sketchfab.com/models/ff72aa5962f4415bbce2a5b542cff996/embed">
   </iframe>
 </div>
-
 
 ### Generate Levels of Detail using the Poisson method
 
@@ -143,19 +140,18 @@ I followed these main steps, adapted from the tutorial:
 ## Conclusions
 
 Main conclusions:
-- The BPA mesh captures sharp edges well but requires cleaner input. It is not well suited for meshes of this kind.
-- Poisson produces smoother, watertight meshes better suited for our goals.
+
+* The BPA mesh captures sharp edges well but requires cleaner input. It is not well suited for meshes of this kind.
+* Poisson produces smoother, watertight meshes better suited for our goals.
 
 <div style="margin-bottom: 2em;"></div>
 
 > **Warning:** There are details that the meshes do not show (e.g. some holes on the top and bottom). This is due to the input point cloud not being detailed enough.
-{: .alert .alert-warning}
----
+
+
 
 ## Code and Data
 
 The full source code and experimental data used are available on [GitHub PhD repository](https://github.com/joaonunovalente/PhD/tree/main/Code/pointcloud-to-mesh).
 
-The article _5-Step Guide to generate 3D meshes from point clouds with Python_ from __Florent Poux__ can be found [here](/assets/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/files/5-Step%20Guide%20to%20generate%203D%20meshes%20from%20point%20clouds%20with%20Python%20-%20Florent%20Poux.pdf).
-
-
+The article *5-Step Guide to generate 3D meshes from point clouds with Python* from **Florent Poux** can be found [here](/assets/img/posts/2026-01-29-Creating-3D-Meshes-from-Point-Clouds-with-Python/files/5-Step%20Guide%20to%20generate%203D%20meshes%20from%20point%20clouds%20with%20Python%20-%20Florent%20Poux.pdf).
