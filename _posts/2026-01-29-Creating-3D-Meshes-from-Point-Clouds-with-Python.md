@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Creating 3D Meshes from Point Clouds with Python"
-subtitle: "Using Open3D for surface reconstruction and Level of Detail generation"
+title: Creating 3D Meshes from Point Clouds with Python
+subtitle: Using Open3D for surface reconstruction and Level of Detail generation
 date: 2026-01-29
 background: /assets/img/posts/08.jpg
 tags:
@@ -150,6 +150,7 @@ Main conclusions:
 
 > **Warning:** There are details that the meshes do not show (e.g. some holes on the top and bottom). This is due to the input point cloud not being detailed enough.
 {: .alert .alert-warning}
+
 ---
 
 ## Code and Data
