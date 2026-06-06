@@ -27,6 +27,8 @@ This is my personal academic website, created during my PhD. It includes:
 
 Built using [Jekyll](https://jekyllrb.com/) and based on a customized version of the [Clean Blog](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) theme.
 
+The site also includes [Decap CMS](https://decapcms.org/) for editing posts through `/admin`. Post previews are rendered to match the public post page, and the CMS lets you pick a post `background` from the existing committed cover images while still supporting image uploads inside the body.
+
 ---
 
 ## Live Site
@@ -71,6 +73,14 @@ If you prefer running Jekyll directly, these commands are equivalent:
 bundle exec jekyll build
 bundle exec jekyll serve --livereload
 ```
+
+## Content Management
+
+Open `/admin` in the browser to access Decap CMS.
+
+- The `background` field lets you choose from the existing cover images already committed in the repository.
+- Images inserted inside a post body are stored in the post-specific folder under `assets/img/posts/<date>-<slug>/`.
+- Publishing still uses the GitHub backend, so Decap must be configured with GitHub OAuth access for the repository.
 
 ---
 

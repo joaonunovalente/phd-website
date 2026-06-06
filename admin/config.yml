@@ -1,0 +1,94 @@
+backend:
+  name: github
+  repo: joaonunovalente/phd-website
+  branch: main
+
+site_url: https://phd.joaonunovalente.com
+display_url: https://phd.joaonunovalente.com
+logo_url: /assets/favicon.ico
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    media_folder: "assets/img/posts/{{year}}-{{month}}-{{day}}-{{slug}}"
+    public_folder: "/assets/img/posts/{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: post
+      - label: Title
+        name: title
+        widget: string
+      - label: Subtitle
+        name: subtitle
+        widget: string
+        required: false
+      - label: Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Background
+        name: background
+        widget: select
+        required: false
+        hint: Escolha uma imagem já existente no repositório.
+        options:
+          - label: Sem imagem
+            value: ""
+          - label: Background da página inicial
+            value: "/assets/img/bg-index.jpg"
+          - label: Background da página sobre
+            value: "/assets/img/bg-about.jpg"
+          - label: Background da página de contato
+            value: "/assets/img/bg-contact.jpg"
+          - label: Background da página de doutorado
+            value: "/assets/img/bg-phd.jpg"
+          - label: Background dos posts
+            value: "/assets/img/bg-post.jpg"
+          - label: Post 01
+            value: "/assets/img/posts/01.jpg"
+          - label: Post 02
+            value: "/assets/img/posts/02.jpg"
+          - label: Post 03
+            value: "/assets/img/posts/03.jpg"
+          - label: Post 04
+            value: "/assets/img/posts/04.jpg"
+          - label: Post 05
+            value: "/assets/img/posts/05.jpg"
+          - label: Post 06
+            value: "/assets/img/posts/06.jpg"
+          - label: Post 07
+            value: "/assets/img/posts/07.jpg"
+          - label: Post 08
+            value: "/assets/img/posts/08.jpg"
+          - label: Post 09
+            value: "/assets/img/posts/09.jpg"
+          - label: Post 10
+            value: "/assets/img/posts/10.jpg"
+          - label: Post 11
+            value: "/assets/img/posts/11.jpg"
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+        field:
+          label: Tag
+          name: tag
+          widget: string
+      - label: Body
+        name: body
+        widget: markdown
