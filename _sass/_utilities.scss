@@ -37,3 +37,14 @@
 .references-content {
   font-size: 1.1rem;
 }
+
+.platform-tag {
+  display: inline-block;
+  padding: 0.15em 0.65em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #495057;
+  background: #e9ecef;
+  border-radius: 10px;
+  white-space: nowrap;
+}
