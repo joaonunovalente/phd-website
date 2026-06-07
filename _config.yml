@@ -32,6 +32,10 @@ defaults:
       type: pages
     values:
       layout: page
+  - scope:
+      path: "assets/books"
+    values:
+      sitemap: false
 
 # Sass/SCSS Configuration
 sass:
