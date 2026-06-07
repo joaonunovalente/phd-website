@@ -59,3 +59,16 @@ background: /assets/img/bg-courses.jpg
     </div>
   </div>
 </div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">Oh Shit, Git!?!</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Katie Sylor-Miller &middot; Reference</h6>
+    <p class="card-text">
+      A no-nonsense, plain-English guide to recovering from common Git mishaps — from undoing commits and fixing pushed mistakes to recovering lost work with reflog. An indispensable desk reference whenever Git goes sideways.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://ohshitgit.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
