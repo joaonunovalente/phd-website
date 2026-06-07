@@ -6,8 +6,11 @@ background: /assets/img/bg-books.jpg
 
 <h1 id="books">Books</h1>
 
-<p>Here are some books I've found useful during my PhD. They cover mechanical vibrations, laser vibrometry, and modal analysis.</p>
+<p>Here are some books I've found useful during my PhD. They cover mechanical vibrations, modal analysis, signal processing, and experimental dynamics.</p>
 
+<section class="mb-5 pt-3">
+
+<h2 id="modal-analysis-testing">Modal Analysis &amp; Testing</h2>
 
 <div class="card mt-5 mb-5 p-2">
   <div class="card-body">
@@ -69,7 +72,13 @@ background: /assets/img/bg-books.jpg
   </div>
 </div>
 
-<div class="card mb-5 p-2">
+</section>
+
+<section class="mb-5 pt-3">
+
+<h2 id="signal-processing">Signal Processing &amp; Vibration Analysis</h2>
+
+<div class="card mt-5 mb-5 p-2">
   <div class="card-body">
     <h5 class="card-title">Noise and Vibration Analysis</h5>
     <h6 class="card-subtitle mb-2 text-muted">Anders Brandt</h6>
@@ -93,7 +102,13 @@ background: /assets/img/bg-books.jpg
   </div>
 </div>
 
-<div class="card mb-5 p-2">
+</section>
+
+<section class="mb-5 pt-3">
+
+<h2 id="mechanical-vibrations">Mechanical Vibrations</h2>
+
+<div class="card mt-5 mb-5 p-2">
   <div class="card-body">
     <h5 class="card-title">Mechanical Vibrations</h5>
     <h6 class="card-subtitle mb-2 text-muted">Singiresu S. Rao</h6>
@@ -128,4 +143,6 @@ background: /assets/img/bg-books.jpg
     </div>
   </div>
 </div>
+
+</section>
 
