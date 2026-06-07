@@ -1,12 +1,14 @@
 ---
-title: Courses
-description: Online courses I've taken to broaden my engineering knowledge.
-background: /assets/img/bg-courses.jpg
+title: Programming
+description: Programming courses, tutorials, and references I've used.
+background: /assets/img/bg-programming.jpg
 ---
 
-<h1 id="courses">Courses</h1>
+<h1 id="programming">Programming</h1>
 
-<p>A curated list of online courses that helped me strengthen my engineering and software development skills.</p>
+<p>A curated collection of programming courses, tutorials, and references that I used and can be helpful to implement ideas that one has related with software development.</p>
+
+<h2 id="programming-courses">Courses</h2>
 
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
@@ -62,6 +64,34 @@ background: /assets/img/bg-courses.jpg
 
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
+    <h5 class="card-title">Cyber Security Base</h5>
+    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
+    <p class="card-text">
+      A free course series covering core cyber security knowledge — analysing flaws in software systems, building secure web applications, performing risk and threat analysis, and understanding relevant EU legislation. Includes programming assignments, essays, quizzes, and a capture-the-flag competition.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://cybersecuritybase.mooc.fi/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">Data Structures and Algorithms</h5>
+    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
+    <p class="card-text">
+      Two-part course covering data structures and algorithm design — lists, hashing, sorting, trees, recursion, graph algorithms, search problems, dynamic programming, binary search trees, shortest paths, and maximum flow. Automatically checked exercises with on-site exam.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://tira.mooc.fi/spring-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
     <h5 class="card-title">SQLBolt</h5>
     <h6 class="card-subtitle mb-2 text-muted">SQLBolt &middot; Interactive Tutorial</h6>
     <p class="card-text">
@@ -86,6 +116,8 @@ background: /assets/img/bg-courses.jpg
   </div>
 </div>
 
+<h2 id="references">References</h2>
+
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
     <h5 class="card-title">Oh Shit, Git!?!</h5>
@@ -95,32 +127,6 @@ background: /assets/img/bg-courses.jpg
     </p>
     <div class="d-flex justify-content-between align-items-center">
       <a href="https://ohshitgit.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
-    </div>
-  </div>
-</div>
-
-<div class="card mt-5  mb-5 p-2">
-  <div class="card-body">
-    <h5 class="card-title">Cyber Security Base</h5>
-    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
-    <p class="card-text">
-      A free course series covering core cyber security knowledge — analysing flaws in software systems, building secure web applications, performing risk and threat analysis, and understanding relevant EU legislation. Includes programming assignments, essays, quizzes, and a capture-the-flag competition.
-    </p>
-    <div class="d-flex justify-content-between align-items-center">
-      <a href="https://cybersecuritybase.mooc.fi/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
-    </div>
-  </div>
-</div>
-
-<div class="card mt-5  mb-5 p-2">
-  <div class="card-body">
-    <h5 class="card-title">Data Structures and Algorithms</h5>
-    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
-    <p class="card-text">
-      Two-part course covering data structures and algorithm design — lists, hashing, sorting, trees, recursion, graph algorithms, search problems, dynamic programming, binary search trees, shortest paths, and maximum flow. Automatically checked exercises with on-site exam.
-    </p>
-    <div class="d-flex justify-content-between align-items-center">
-      <a href="https://tira.mooc.fi/spring-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
     </div>
   </div>
 </div>
