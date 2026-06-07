@@ -18,3 +18,14 @@ background: /assets/img/bg-articles.jpg
     </div>
   </div>
 </div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">What is a Frequency Response Function (FRF)?</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Siemens Community</h6>
+    <p class="card-text">Introductory overview of the Frequency Response Function — explaining how it relates input forces to output responses and why it is fundamental to modal analysis.</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://community.sw.siemens.com/s/article/what-is-a-frequency-response-function-frf" target="_blank" class="btn btn-outline-primary btn-sm flex-shrink-0">Read article →</a>
+    </div>
+  </div>
+</div>
