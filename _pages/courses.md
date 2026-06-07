@@ -23,6 +23,19 @@ background: /assets/img/bg-courses.jpg
 
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
+    <h5 class="card-title">DevOps with Kubernetes</h5>
+    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
+    <p class="card-text">
+      Follow-up to DevOps with Docker, diving into container orchestration with Kubernetes. Covers pods, deployments, services, ingress, persistent storage, and Helm charts, with hands-on exercises deploying and managing containerised applications at scale.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://courses.mooc.fi/org/uh-cs/courses/devops-with-kubernetes" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
     <h5 class="card-title">Full Stack Open</h5>
     <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
     <p class="card-text">
@@ -62,6 +75,19 @@ background: /assets/img/bg-courses.jpg
 
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
+    <h5 class="card-title">Shell Scripting Tutorial</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Steve Parker &middot; shellscript.sh</h6>
+    <p class="card-text">
+      A comprehensive Bourne shell scripting tutorial covering everything from first scripts and variables to loops, functions, and external programs. Includes wildcards, escape characters, test/case constructs, and interactive shell usage, with plenty of hands-on examples and exercises.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://www.shellscript.sh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
     <h5 class="card-title">Oh Shit, Git!?!</h5>
     <h6 class="card-subtitle mb-2 text-muted">Katie Sylor-Miller &middot; Reference</h6>
     <p class="card-text">
@@ -69,6 +95,32 @@ background: /assets/img/bg-courses.jpg
     </p>
     <div class="d-flex justify-content-between align-items-center">
       <a href="https://ohshitgit.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">Cyber Security Base</h5>
+    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
+    <p class="card-text">
+      A free course series covering core cyber security knowledge — analysing flaws in software systems, building secure web applications, performing risk and threat analysis, and understanding relevant EU legislation. Includes programming assignments, essays, quizzes, and a capture-the-flag competition.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://cybersecuritybase.mooc.fi/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">Data Structures and Algorithms</h5>
+    <h6 class="card-subtitle mb-2 text-muted">University of Helsinki &middot; MOOC.fi</h6>
+    <p class="card-text">
+      Two-part course covering data structures and algorithm design — lists, hashing, sorting, trees, recursion, graph algorithms, search problems, dynamic programming, binary search trees, shortest paths, and maximum flow. Automatically checked exercises with on-site exam.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://tira.mooc.fi/spring-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
     </div>
   </div>
 </div>

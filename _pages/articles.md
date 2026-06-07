@@ -29,3 +29,14 @@ background: /assets/img/bg-articles.jpg
     </div>
   </div>
 </div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">Javascript Variables: Should You Use let, var or const?</h5>
+    <h6 class="card-subtitle mb-2 text-muted">sigu — podiihq</h6>
+    <p class="card-text">Explains the differences between <code>var</code>, <code>let</code>, and <code>const</code> in JavaScript — covering scoping rules, hoisting, and when to use each declaration keyword.</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://medium.com/podiihq/javascript-variables-should-you-use-let-var-or-const-394f7645c88f" target="_blank" class="btn btn-outline-primary btn-sm flex-shrink-0">Read article →</a>
+    </div>
+  </div>
+</div>
