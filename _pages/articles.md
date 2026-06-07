@@ -6,7 +6,11 @@ background: /assets/img/bg-articles.jpg
 
 <h1 id="articles">Articles</h1>
 
-<p>A curated list of community discussions and technical guides that helped me better understand key concepts in modal analysis and laser vibrometry.</p>
+<p>A curated list of community discussions and technical guides that helped me better understand key concepts in modal analysis, laser vibrometry, and software engineering.</p>
+
+<section class="mb-5 pt-3">
+
+<h2 id="modal-analysis-vibrometry">Modal Analysis &amp; Vibrometry</h2>
 
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
@@ -30,6 +34,12 @@ background: /assets/img/bg-articles.jpg
   </div>
 </div>
 
+</section>
+
+<section class="mb-5 pt-3">
+
+<h2 id="software-engineering">Software Engineering</h2>
+
 <div class="card mt-5  mb-5 p-2">
   <div class="card-body">
     <h5 class="card-title">Javascript Variables: Should You Use let, var or const?</h5>
@@ -40,3 +50,5 @@ background: /assets/img/bg-articles.jpg
     </div>
   </div>
 </div>
+
+</section>
