@@ -23,5 +23,9 @@
 <script src="{{"/assets/js/search.js" | relative_url }}"></script>
 {% endif %}
 
+{% if page.url contains 'meeting' %}
+<script src="{{"/assets/js/meeting-tasks.js" | relative_url }}"></script>
+{% endif %}
+
 {% include lightbox.html %}
 <script src="{{"/assets/js/lightbox.js" | relative_url }}"></script>

@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% assign today = site.time | date: '%Y-%m-%d' %}
+{% assign page_date = page.date | date: '%Y-%m-%d' %}
+
+{% if page_date <= today %}
+
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | relative_url }}')">
@@ -54,3 +59,34 @@ layout: default
     </div>
   </div>
 </div>
+
+{% else %}
+
+<header class="masthead">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-heading">
+          <h1>{{ page.title }}</h1>
+          {% if page.subtitle %}
+          <h2 class="subheading">{{ page.subtitle }}</h2>
+          {% endif %}
+          <span class="meta">
+            Available on {{ page.date | date: '%B %d, %Y' }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p class="text-center text-muted mt-5">This meeting note will be available on {{ page.date | date: '%B %d, %Y' }}.</p>
+    </div>
+  </div>
+</div>
+
+{% endif %}

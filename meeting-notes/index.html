@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Meeting Notes
-description: "Meeting summaries and action items."
+description: "These are problably terrible notes."
 background: '/assets/img/bg-meeting-notes.jpg'
 ---
 
@@ -9,10 +9,14 @@ background: '/assets/img/bg-meeting-notes.jpg'
   <h1 class="page-title mb-5">All Meetings</h1>
 </div>
 
+{% assign today = site.time | date: '%Y-%m-%d' %}
 {% assign sorted_meetings = site.meetings | sort: 'date' | reverse %}
+{% assign visible_count = 0 %}
 <div class="posts-grid row">
 {% for meeting in sorted_meetings %}
-
+  {% assign meeting_date = meeting.date | date: '%Y-%m-%d' %}
+  {% if meeting_date <= today %}
+    {% assign visible_count = visible_count | plus: 1 %}
   <div class="post-item col-12 mb-4">
     <article class="post-card h-100">
       {% if meeting.background %}
@@ -36,10 +40,10 @@ background: '/assets/img/bg-meeting-notes.jpg'
 
     </article>
   </div>
-
+  {% endif %}
 {% endfor %}
 </div>
 
-{% if site.meetings.size == 0 %}
+{% if visible_count == 0 %}
 <p class="text-center text-muted mt-5">No meeting notes yet.</p>
 {% endif %}

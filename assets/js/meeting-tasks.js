@@ -1,50 +1,3 @@
----
-layout: meeting-note
-title: "Weekly Standup"
-subtitle: "Lab meeting — Week 24"
-date: 2026-06-08
-background: /assets/img/bg-notes.jpg
----
-
-## Agenda
-{: .goals-title}
-
-- [ ] Review progress on cantilever beam experiments
-- [ ] Discuss laser vibrometer calibration issues
-- [ ] Plan next week's measurement campaign
-
-<hr class="section-divider">
-
-## Discussion Notes
-{: .daily-tasks-title}
-
-### Topics Covered
-{: .day-title}
-
-- [X] Accelerometer vs vibrometer comparison results
-- [X] FEMAP simulation status update
-- [ ] 3D measurement workflow refinements
-
-### Decisions Made
-{: .day-title}
-
-- [X] Proceed with laser vibrometer for remaining experiments
-- [X] Schedule follow-up with Rui Moreira about markers
-
-<hr class="section-divider">
-
-## Action Items
-{: .daily-tasks-title}
-
-### To Do
-{: .day-title}
-
-- [ ] Prepare summary of accelerometer comparison for advisor meeting
-- [ ] Update FEMAP model with corrected boundary conditions
-- [ ] Book lab time for Wednesday 3D measurements
-- [ ]
-
-<script>
 (function() {
   function processList(ul) {
     ul.classList.add('task-list');
@@ -90,4 +43,3 @@ background: /assets/img/bg-notes.jpg
     processList(ul);
   });
 })();
-</script>
