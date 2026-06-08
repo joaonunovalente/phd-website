@@ -25,6 +25,9 @@ collections:
   pages:
     output: true
     permalink: /:name/
+  weeks:
+    output: true
+    permalink: /planner/:name/
 
 defaults:
   - scope:
@@ -32,6 +35,11 @@ defaults:
       type: pages
     values:
       layout: page
+  - scope:
+      path: ""
+      type: weeks
+    values:
+      layout: planner
   - scope:
       path: "assets/books"
     values:

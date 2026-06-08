@@ -1,0 +1,45 @@
+---
+layout: page
+title: Planner
+description: "Weekly planner & daily task checklists."
+background: '/assets/img/bg-planner.jpg'
+---
+
+<div class="d-flex align-items-center justify-content-between mb-4">
+  <h1 class="page-title mb-5">All Weeks</h1>
+</div>
+
+{% assign sorted_weeks = site.weeks | sort: 'date' | reverse %}
+<div class="posts-grid row">
+{% for week in sorted_weeks %}
+
+  <div class="post-item col-12 mb-4">
+    <article class="post-card h-100">
+      {% if week.background %}
+      <a href="{{ week.url | prepend: site.baseurl | replace: '//', '/' }}" class="post-card-thumb-link">
+        <img src="{{ week.background | relative_url }}" alt="{{ week.title }}" class="post-card-thumb" loading="lazy" />
+      </a>
+      {% endif %}
+
+      <div class="post-card-body">
+        <a href="{{ week.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <h2 class="post-title">{{ week.title }}</h2>
+          {% if week.subtitle %}
+            <h3 class="post-subtitle">{{ week.subtitle }}</h3>
+          {% endif %}
+        </a>
+
+        <p class="post-meta">
+          Published on {{ week.date | date: '%B %d, %Y' }}
+        </p>
+      </div>
+
+    </article>
+  </div>
+
+{% endfor %}
+</div>
+
+{% if site.weeks.size == 0 %}
+<p class="text-center text-muted mt-5">No planner entries yet.</p>
+{% endif %}
