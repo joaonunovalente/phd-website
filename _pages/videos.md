@@ -40,3 +40,14 @@ background: /assets/img/bg-videos.jpg
     <p class="card-text">Guidance on selecting the appropriate modal impact hammer tip to achieve high-quality FRF measurements for structural dynamics and modal analysis.</p>
   </div>
 </div>
+
+<div class="card mt-5 mb-5 p-0 overflow-hidden">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ol7Z4HVvy4U" title="1D v 3D scanning vibrometer system" allowfullscreen></iframe>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">1D v 3D Scanning Vibrometer System</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Optomet</h6>
+    <p class="card-text">Explains the differences between 1D and 3D scanning laser Doppler vibrometer systems and provides guidance on choosing between the two for vibration measurement applications.</p>
+  </div>
+</div>

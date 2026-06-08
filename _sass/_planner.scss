@@ -1,0 +1,109 @@
+// Planner page — weekly checklists in kramdown markdown format
+
+h2.goals-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 1.5rem 0 0 0;
+  padding: 0.75rem 1rem;
+  background: #e8f5e9;
+  border-left: 4px solid #2e7d32;
+  border-radius: 4px 4px 0 0;
+  letter-spacing: 0.5px;
+}
+
+h2.goals-title + ul {
+  list-style: none;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin: 0 0 2.5rem 0;
+  background: #fff;
+  border: 1px solid #e6eaef;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+h2.goals-title + ul li {
+  padding: 0.85rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.rem;
+  font-size: 1.1rem;
+}
+
+h3.day-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 2rem 0 0 0;
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #0085a1;
+  border-radius: 4px 4px 0 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+h2.daily-tasks-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 2rem 0 0.75rem 0;
+  padding: 0.75rem 1rem;
+  background: #fff3e0;
+  border-left: 4px solid #e65100;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+h3.day-title:first-of-type {
+  margin-top: 0.5rem;
+}
+
+h3.day-title + ul {
+  list-style: none;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin: 0 0 2.5rem 0;
+  background: #fff;
+  border: 1px solid #e6eaef;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+
+h3.day-title + ul li {
+  padding: 0.85rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+input.task-checkbox {
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 2px solid #adb5bd;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  margin: 0.35rem 0 0 0;
+}
+
+input.task-checkbox:checked {
+  background-color: #0085a1;
+  border-color: #0085a1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3E%3C/svg%3E");
+}
+
+input.task-checkbox:focus {
+  border-color: #0085a1;
+  box-shadow: 0 0 0 0.2rem rgba(0, 133, 161, 0.25);
+  outline: none;
+}
+
+input.task-checkbox:checked ~ span {
+  text-decoration: line-through;
+  color: #adb5bd;
+}
