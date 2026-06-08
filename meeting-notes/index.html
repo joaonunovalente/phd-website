@@ -1,0 +1,45 @@
+---
+layout: page
+title: Meeting Notes
+description: "Meeting summaries and action items."
+background: '/assets/img/bg-phd.jpg'
+---
+
+<div class="d-flex align-items-center justify-content-between mb-4">
+  <h1 class="page-title mb-5">All Meetings</h1>
+</div>
+
+{% assign sorted_meetings = site.meetings | sort: 'date' | reverse %}
+<div class="posts-grid row">
+{% for meeting in sorted_meetings %}
+
+  <div class="post-item col-12 mb-4">
+    <article class="post-card h-100">
+      {% if meeting.background %}
+      <a href="{{ meeting.url | prepend: site.baseurl | replace: '//', '/' }}" class="post-card-thumb-link">
+        <img src="{{ meeting.background | relative_url }}" alt="{{ meeting.title }}" class="post-card-thumb" loading="lazy" />
+      </a>
+      {% endif %}
+
+      <div class="post-card-body">
+        <a href="{{ meeting.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <h2 class="post-title">{{ meeting.title }}</h2>
+          {% if meeting.subtitle %}
+            <h3 class="post-subtitle">{{ meeting.subtitle }}</h3>
+          {% endif %}
+        </a>
+
+        <p class="post-meta">
+          Published on {{ meeting.date | date: '%B %d, %Y' }}
+        </p>
+      </div>
+
+    </article>
+  </div>
+
+{% endfor %}
+</div>
+
+{% if site.meetings.size == 0 %}
+<p class="text-center text-muted mt-5">No meeting notes yet.</p>
+{% endif %}

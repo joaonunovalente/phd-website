@@ -28,6 +28,9 @@ collections:
   weeks:
     output: true
     permalink: /planner/:name/
+  meetings:
+    output: true
+    permalink: /meeting-notes/:name/
 
 defaults:
   - scope:
@@ -40,6 +43,11 @@ defaults:
       type: weeks
     values:
       layout: planner
+  - scope:
+      path: ""
+      type: meetings
+    values:
+      layout: meeting-note
   - scope:
       path: "assets/books"
     values:

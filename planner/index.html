@@ -10,8 +10,11 @@ background: '/assets/img/bg-planner.jpg'
 </div>
 
 {% assign sorted_weeks = site.weeks | sort: 'date' | reverse %}
+{% assign today = site.time | date: '%Y-%m-%d' %}
 <div class="posts-grid row">
 {% for week in sorted_weeks %}
+  {% assign week_date = week.date | date: '%Y-%m-%d' %}
+  {% if week_date <= today %}
 
   <div class="post-item col-12 mb-4">
     <article class="post-card h-100">
@@ -37,9 +40,10 @@ background: '/assets/img/bg-planner.jpg'
     </article>
   </div>
 
+  {% endif %}
 {% endfor %}
 </div>
 
-{% if site.weeks.size == 0 %}
+{% if sorted_weeks.size == 0 %}
 <p class="text-center text-muted mt-5">No planner entries yet.</p>
 {% endif %}
