@@ -201,6 +201,10 @@ input.task-checkbox:checked ~ span {
     background: none;
   }
 
+  .meeting-info-responsive .meeting-info-table tbody td + td {
+    padding-top: 0.75rem;
+  }
+
   .meeting-info-responsive .meeting-info-table tbody td::before {
     content: attr(data-label);
     display: block;
@@ -208,7 +212,7 @@ input.task-checkbox:checked ~ span {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    color: #666c72;
-    margin-bottom: 0.2rem;
+    color: #0085a1;
+    margin-bottom: 0.15rem;
   }
 }
