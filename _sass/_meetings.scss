@@ -177,11 +177,11 @@ input.task-checkbox:checked ~ span {
 
 @media (max-width: 767px) {
   .meeting-info-responsive {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .meeting-info-responsive + .section-divider {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem !important;
   }
 
   .meeting-info-responsive .meeting-info-table {
@@ -197,7 +197,7 @@ input.task-checkbox:checked ~ span {
 
   .meeting-info-responsive .meeting-info-table tbody tr {
     display: block;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1rem 0.25rem;
   }
 
   .meeting-info-responsive .meeting-info-table tbody td {
