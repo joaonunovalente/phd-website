@@ -1,6 +1,6 @@
 ---
 title: About Me
-description: This is what I do.
+description: This is what I am.
 background: /assets/img/bg-about.jpg
 ---
 <!--------------------------------------------
