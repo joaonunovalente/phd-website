@@ -180,6 +180,10 @@ input.task-checkbox:checked ~ span {
     margin-bottom: 0.75rem;
   }
 
+  .meeting-info-responsive + .section-divider {
+    margin-top: 0.75rem;
+  }
+
   .meeting-info-responsive .meeting-info-table {
     border: 1px solid #e6eaef;
     border-radius: 8px;
