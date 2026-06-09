@@ -11,7 +11,8 @@ document.querySelectorAll('[data-toggle="collapse"]').forEach(trigger => {
     const content = document.querySelector(targetId);
     if (!content.classList.contains('show')) {
       setTimeout(() => {
-        const topPos = header.getBoundingClientRect().top + window.pageYOffset - 20; // Offset of 80px above
+        if (!header) return;
+        const topPos = header.getBoundingClientRect().top + window.pageYOffset - 20;
         window.scrollTo({ top: topPos, behavior: 'smooth' });
       }, 300);
     }
