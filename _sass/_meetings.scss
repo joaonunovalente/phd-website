@@ -176,6 +176,10 @@ input.task-checkbox:checked ~ span {
 }
 
 @media (max-width: 767px) {
+  .meeting-info-responsive {
+    margin-bottom: 0.75rem;
+  }
+
   .meeting-info-responsive .meeting-info-table {
     border: 1px solid #e6eaef;
     border-radius: 8px;
