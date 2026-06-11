@@ -102,3 +102,23 @@ This propeller was scanned using a Revopoint laser scan. With the aid of several
     src="https://sketchfab.com/models/cb9c2df59ab94ec5b1023336d05923e2/embed">
   </iframe>
 </div>
+
+## Files
+
+All files of the markers can be found bellow.
+
+- [Body.stl](/assets/files/revopoint/Body.stl)
+- [Cap.stl](/assets/files/revopoint/Cap.stl)
+- [Dodecahedron.stl](/assets/files/revopoint/Dodecahedron.stl)
+- [Dodecahedron cutted 3 sides.stl](/assets/files/revopoint/Dodecahedron-cutted-3-sides.stl)
+- [Dodecahedron cutted 6 sides.stl](/assets/files/revopoint/Dodecahedron-cutted-6-sides.stl)
+- [Dodecahedron raised.stl](/assets/files/revopoint/Dodecahedron-raised.stl)
+- [Equilateral Pyramid.stl](/assets/files/revopoint/Equilateral_Pyramid.stl)
+
+As an example of how they look, you can find the Body & Cap and also smaller markers.
+
+<figure class="mt-5 mb-5" style="text-align: center;">
+  <a href="/assets/img/posts/2026-06-09-Revopoint-and-3d-printing-its-makers/black-markers.jpg" class="lightbox">
+    <img src="/assets/img/posts/2026-06-09-Revopoint-and-3d-printing-its-makers/black-markers.jpg" class="img-fit" alt="Chart" />
+  </a>
+</figure>
