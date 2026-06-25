@@ -34,6 +34,17 @@ background: /assets/img/bg-articles.jpg
   </div>
 </div>
 
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">Simcenter Testlab MIMO FRF Testing</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Siemens Community</h6>
+    <p class="card-text">Overview of Multiple-Input Multiple-Output (MIMO) FRF testing in Simcenter Testlab — covering setup, execution, and benefits of MIMO techniques over traditional single-excitation methods.</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://community.sw.siemens.com/s/article/Simcenter-Testlab-MIMO-FRF-Testing" target="_blank" class="btn btn-outline-primary btn-sm flex-shrink-0">Read article →</a>
+    </div>
+  </div>
+</div>
+
 </section>
 
 <section class="mb-5 pt-3">
