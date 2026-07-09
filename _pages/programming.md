@@ -130,3 +130,16 @@ background: /assets/img/bg-programming.jpg
     </div>
   </div>
 </div>
+
+<div class="card mt-5  mb-5 p-2">
+  <div class="card-body">
+    <h5 class="card-title">apiguide.dev</h5>
+    <h6 class="card-subtitle mb-2 text-muted">apiguide.dev &middot; Reference</h6>
+    <p class="card-text">
+      A practical reference for designing, building, and documenting RESTful APIs. Covers best practices for resource naming, status codes, authentication, versioning, error handling, and pagination, with concise examples and actionable guidelines.
+    </p>
+    <div class="d-flex justify-content-between align-items-center">
+      <a href="https://apiguide.dev/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm flex-shrink-0">View course →</a>
+    </div>
+  </div>
+</div>
